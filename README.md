@@ -11,3 +11,6 @@
 This HTML/CSS/JS game *(means it can be played in the browser)* is about a parakeet.
 
 No further information known.
+
+## Wiki
+See more at [the wiki](https://github.com/EntityPlantt/parakeet-simulator/wiki).
