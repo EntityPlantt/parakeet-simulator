@@ -1,11 +1,15 @@
 # Parakeet Simulator
 *A HTML/CSS/JS game about a parakeet (budgerigar)*
 
-**Warning: This project is not even started.**  
-**It's just the repository that's added.**
+Version: `1.0.0`
+
+**Warning: This project is not completed.**
 
 ## Play
-[Click here](https://entityplantt.github.io/parakeet-simulator/) to play it.
+Platform|Link
+--|--
+Browser|[Web page](https://entityplantt.github.io/parakeet-simulator/)
+Windows|[MSI File](https://entityplantt.github.io/parakeet-simulator/msi/Parakeet%20Simulator.msi)
 
 ## Description
 This HTML/CSS/JS game *(means it can be played in the browser)* is about a parakeet.
