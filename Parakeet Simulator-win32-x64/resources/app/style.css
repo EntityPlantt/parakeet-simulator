@@ -1,0 +1,59 @@
+@font-face {
+	font-family: FFF Forward;
+	src: url("font.ttf") format("truetype");
+}
+html, body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	font-family: FFF Forward;
+	background-image: url(assets/blocks/wood.png);
+	background-size: 64px;
+	animation: menu 2s infinite linear;
+	cursor: url(assets/cursor.png) 24 24, auto;
+}
+#menu {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background-image: url(assets/blocks/leaves.png);
+	background-size: 64px;
+	animation: menu 2s infinite linear, fadeFromAbove 1s 1 ease-out;
+	padding: 1cm;
+	border-radius: 1cm;
+	color: white !important;
+	text-align: center;
+}
+button, input {
+	cursor: inherit;
+	font: inherit;
+	color: inherit;
+}
+#seed {
+	background: rgba(0, 0, 0, 0.5);
+	border: none;
+	width: 100%;
+	text-align: inherit;
+	padding: 5px 0 5px 0;
+}
+#start {
+	background: gold;
+	color: black;
+	border: none;
+	margin-top: 10px;
+}
+@keyframes menu {
+	from {
+		background-position: 0;
+	}
+	to {
+		background-position: 64px;
+	}
+}
+@keyframes fadeFromAbove {
+	from {
+		opacity: 0;
+		top: 0;
+	}
+}

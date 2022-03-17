@@ -1,0 +1,45 @@
+{
+  "name": "parakeet-simulator",
+  "version": "1.0.0",
+  "description": "A HTML/CSS/JS game about a parakeet (budgerigar)",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "assets": "assets"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . --icon=icon.ico \"Parakeet Simulator\"",
+    "msi": "node build-msi.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EntityPlantt/parakeet-simulator.git"
+  },
+  "keywords": [
+    "game",
+    "html5",
+    "canvas-game",
+    "canvas2d",
+    "html5-canvas-game",
+    "html-css-javascript",
+    "parakeet"
+  ],
+  "author": "EntityPlantt",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/EntityPlantt/parakeet-simulator/issues"
+  },
+  "homepage": "https://github.com/EntityPlantt/parakeet-simulator#readme",
+  "devDependencies": {
+    "electron": "^17.1.2",
+    "electron-wix-msi": "^3.2.0",
+    "uuid": "^3.4.0"
+  },
+  "build": {
+    "appId": "github.plantt.parakeet-simulator",
+    "mac": {
+      "category": "github.plantt"
+    }
+  }
+}
