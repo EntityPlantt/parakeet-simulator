@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . --icon=icon.ico \"Parakeet Simulator\"",
+    "build": "npx electron-packager . --icon=icon.ico \"Parakeet Simulator\"",
     "msi": "node build-msi.js"
   },
   "repository": {
@@ -33,6 +33,7 @@
   "homepage": "https://github.com/EntityPlantt/parakeet-simulator#readme",
   "devDependencies": {
     "electron": "^17.1.2",
+    "electron-packager": "^15.4.0",
     "electron-wix-msi": "^3.2.0",
     "uuid": "^3.4.0"
   },

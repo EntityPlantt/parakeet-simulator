@@ -1,8 +1,8 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" 
      xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
   <!-- http://wixtoolset.org/documentation/manual/v3/xsd/wix/product.html -->
-  <Product Id="F7FB7EC1-CCA7-4E7C-8E71-52EF97636876" 
-           UpgradeCode="136a1215-7e01-4747-a989-a58d20cefc49"
+  <Product Id="823B391B-1DBD-4E8A-A2B0-91AC49FC1F5E" 
+           UpgradeCode="8b2af802-9fe2-4d3a-b5c8-1203240018ab"
            Name = "Parakeet Simulator (Machine - MSI)"
            Version="1.0.0.0"
            Manufacturer="EntityPlantt"
@@ -56,13 +56,13 @@
     PurgeOnUninstall action. Since this package can be installed perUser or perMachine,
     we have to look in both places. First successful search wins. -->
     <Property Id="INSTALLPATH">
-      <RegistrySearch Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F7FB7EC1-CCA7-4E7C-8E71-52EF97636876}.msq"
+      <RegistrySearch Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{823B391B-1DBD-4E8A-A2B0-91AC49FC1F5E}.msq"
                       Root="HKCU" 
                       Type="raw"
                       Id="INSTALLPATH_REGSEARCH_HKCU"
                       Name="InstallPath"
                       Win64="no"/>
-      <RegistrySearch Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F7FB7EC1-CCA7-4E7C-8E71-52EF97636876}.msq"
+      <RegistrySearch Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{823B391B-1DBD-4E8A-A2B0-91AC49FC1F5E}.msq"
                       Root="HKLM" 
                       Type="raw"
                       Id="INSTALLPATH_REGSEARCH_HKLM"
@@ -120,442 +120,448 @@
        <!-- Installation files to %PROGRAMFILES% -->
       <Directory Id="ProgramFilesFolder">
         <Directory Id="APPLICATIONROOTDIRECTORY" Name="Parakeet Simulator">
-          <Directory Id="__eb4ab506_47b5_49dd_ae03_7f49dc8d04f7" Name="app-1.0.0">
-            <Directory Id="_locales_945ea3eb_07d0_449b_8f26_83e9b8740769" Name="locales">
-              <Component Id="_locales_am.pak_a544431c_54fd_4eea_98b1_62cd4205b858" Guid="2dfaf435-49f3-48ea-a423-5f55d6ac2ac1" Win64="no">
-                <File Name="am.pak" Id="_locales_am.pak_a544431c_54fd_4eea_98b1_62cd4205b858" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\am.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+          <Directory Id="__56b8719d_0a4a_43e1_9c20_6f9601cd974f" Name="app-1.0.0">
+            <Directory Id="_locales_200fc335_20d8_4313_8fcf_cb52586e9959" Name="locales">
+              <Component Id="_locales_am.pak_ce994bce_8afa_4968_afe9_c830289089cb" Guid="8cc49835-f320-4c62-a2dc-485db6c84af4" Win64="no">
+                <File Name="am.pak" Id="_locales_am.pak_ce994bce_8afa_4968_afe9_c830289089cb" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\am.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_ar.pak_8b9aaa3e_567d_4547_bfd8_1f08a6e6cb91" Guid="17a1389e-92bb-4323-9b0b-69fbaceef1e6" Win64="no">
-                <File Name="ar.pak" Id="_locales_ar.pak_8b9aaa3e_567d_4547_bfd8_1f08a6e6cb91" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ar.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_ar.pak_120b1ea3_6a90_4fde_88d1_8fc95bd5e983" Guid="39e82adf-275e-4ef7-8a02-6835b0a8c348" Win64="no">
+                <File Name="ar.pak" Id="_locales_ar.pak_120b1ea3_6a90_4fde_88d1_8fc95bd5e983" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ar.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_bg.pak_4b9dc686_376e_468e_b6bb_3e49ab5cae88" Guid="77ac7d9a-b525-495a-917a-799dc81d52c9" Win64="no">
-                <File Name="bg.pak" Id="_locales_bg.pak_4b9dc686_376e_468e_b6bb_3e49ab5cae88" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\bg.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_bg.pak_c07c4b8c_c572_4f77_9664_e9c6cc7a7e8a" Guid="98ad4d19-ce04-417b-a616-366282b806fb" Win64="no">
+                <File Name="bg.pak" Id="_locales_bg.pak_c07c4b8c_c572_4f77_9664_e9c6cc7a7e8a" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\bg.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_bn.pak_cf6ea6f2_ecba_4301_b554_f01198d4a25b" Guid="18a065a3-d53c-4c2c-b695-15fcdbdb8a3b" Win64="no">
-                <File Name="bn.pak" Id="_locales_bn.pak_cf6ea6f2_ecba_4301_b554_f01198d4a25b" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\bn.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_bn.pak_2e694c07_ccbe_46d5_bd19_ce8220d8854a" Guid="51a558ac-79e9-4d0e-8cf4-14a59e3a70da" Win64="no">
+                <File Name="bn.pak" Id="_locales_bn.pak_2e694c07_ccbe_46d5_bd19_ce8220d8854a" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\bn.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_ca.pak_d0b12eb5_cfe4_4fca_a536_cd61fc68c8d3" Guid="af8cd786-f119-478f-974c-a72301f4c51a" Win64="no">
-                <File Name="ca.pak" Id="_locales_ca.pak_d0b12eb5_cfe4_4fca_a536_cd61fc68c8d3" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ca.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_ca.pak_ab2253ca_0bf1_49f0_9092_e137be3edf9e" Guid="4f78ba5f-8884-4cd4-a8bd-6d1230c1e464" Win64="no">
+                <File Name="ca.pak" Id="_locales_ca.pak_ab2253ca_0bf1_49f0_9092_e137be3edf9e" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ca.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_cs.pak_be3d9a79_a065_4274_b717_f93a0af5102a" Guid="5a189cc5-5109-49cb-b046-403bfde35efb" Win64="no">
-                <File Name="cs.pak" Id="_locales_cs.pak_be3d9a79_a065_4274_b717_f93a0af5102a" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\cs.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_cs.pak_f658b1bb_f9ec_4961_a0a6_b84177cbcb6c" Guid="2a7a7adc-7cbe-4f9f-8a1c-cf81f39e0d23" Win64="no">
+                <File Name="cs.pak" Id="_locales_cs.pak_f658b1bb_f9ec_4961_a0a6_b84177cbcb6c" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\cs.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_da.pak_71a0edce_0cbc_4dee_acbe_c48fc60dd111" Guid="1ea5da2e-1208-4356-98a4-051df14578e1" Win64="no">
-                <File Name="da.pak" Id="_locales_da.pak_71a0edce_0cbc_4dee_acbe_c48fc60dd111" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\da.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_da.pak_3ddc17e4_ed9e_41ba_b1d2_db0630429319" Guid="722eb7fa-d4f6-451a-a984-6e0e420be673" Win64="no">
+                <File Name="da.pak" Id="_locales_da.pak_3ddc17e4_ed9e_41ba_b1d2_db0630429319" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\da.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_de.pak_cc538810_eb1e_4abe_a1fc_eb910ef3d964" Guid="412ae28b-cb4e-427c-88b4-b254eb39873c" Win64="no">
-                <File Name="de.pak" Id="_locales_de.pak_cc538810_eb1e_4abe_a1fc_eb910ef3d964" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\de.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_de.pak_bcf1430b_b2b6_4527_bc4a_8c0157c1610e" Guid="38bfa83d-4da9-4c3a-951b-76664af298fc" Win64="no">
+                <File Name="de.pak" Id="_locales_de.pak_bcf1430b_b2b6_4527_bc4a_8c0157c1610e" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\de.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_el.pak_234ae20e_e5aa_42cb_b7f4_772a1f759d33" Guid="b417e398-5004-43eb-88d4-973e17d4b272" Win64="no">
-                <File Name="el.pak" Id="_locales_el.pak_234ae20e_e5aa_42cb_b7f4_772a1f759d33" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\el.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_el.pak_3814cc14_80cc_4680_89f8_8eb714bae954" Guid="bd329909-2243-41d0-976a-61b3771ae50a" Win64="no">
+                <File Name="el.pak" Id="_locales_el.pak_3814cc14_80cc_4680_89f8_8eb714bae954" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\el.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_en_GB.pak_cc85ae72_80bb_4c8d_a59b_84909867ff6f" Guid="03437450-276a-4f37-a8d8-6bc9d3fe03be" Win64="no">
-                <File Name="en-GB.pak" Id="_locales_en_GB.pak_cc85ae72_80bb_4c8d_a59b_84909867ff6f" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\en-GB.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_en_GB.pak_e5e4093e_5fa8_4837_9765_919b04fd324c" Guid="092a1158-8191-4f3a-a8a0-fe2432f01310" Win64="no">
+                <File Name="en-GB.pak" Id="_locales_en_GB.pak_e5e4093e_5fa8_4837_9765_919b04fd324c" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\en-GB.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_en_US.pak_263a5f97_7614_4446_91b2_9193f01ecb92" Guid="37ac63dc-59f4-4b59-9916-39671562e3d0" Win64="no">
-                <File Name="en-US.pak" Id="_locales_en_US.pak_263a5f97_7614_4446_91b2_9193f01ecb92" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\en-US.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_en_US.pak_76920d5a_3b0c_4f62_99a0_949584bfbb96" Guid="91339415-2480-4ccc-88a2-ec001c589683" Win64="no">
+                <File Name="en-US.pak" Id="_locales_en_US.pak_76920d5a_3b0c_4f62_99a0_949584bfbb96" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\en-US.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_es_419.pak_85a5767a_95d0_45a8_91bb_cc247c9eb551" Guid="077c48aa-39cc-496e-bde8-77016dde2d0f" Win64="no">
-                <File Name="es-419.pak" Id="_locales_es_419.pak_85a5767a_95d0_45a8_91bb_cc247c9eb551" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\es-419.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_es_419.pak_169487a7_9156_4e27_abf5_ab26f16e77c7" Guid="93bbfe1b-36bb-44bd-8333-5cec71e395fb" Win64="no">
+                <File Name="es-419.pak" Id="_locales_es_419.pak_169487a7_9156_4e27_abf5_ab26f16e77c7" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\es-419.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_es.pak_f979b03b_e846_428a_96a4_c4eb0a1d6525" Guid="8b454fc0-4a8b-46c0-9291-4a2ccc8e75c7" Win64="no">
-                <File Name="es.pak" Id="_locales_es.pak_f979b03b_e846_428a_96a4_c4eb0a1d6525" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\es.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_es.pak_0baab20a_3a98_42ad_ae38_9a1d917a3d85" Guid="c6b042fa-1fb4-4153-9ce0-a0179722aa9a" Win64="no">
+                <File Name="es.pak" Id="_locales_es.pak_0baab20a_3a98_42ad_ae38_9a1d917a3d85" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\es.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_et.pak_c12ec990_536e_44a5_bd0e_ad67063b5ec8" Guid="fb17368a-318a-4d91-8d92-f19aa6f1f90b" Win64="no">
-                <File Name="et.pak" Id="_locales_et.pak_c12ec990_536e_44a5_bd0e_ad67063b5ec8" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\et.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_et.pak_dab9b9c9_86fc_4cdd_90d8_3d6935c720d3" Guid="0787893d-98a1-409d-adb3-778dd7729fce" Win64="no">
+                <File Name="et.pak" Id="_locales_et.pak_dab9b9c9_86fc_4cdd_90d8_3d6935c720d3" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\et.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_fa.pak_ce35c30a_39f2_4028_859d_86911c1855d2" Guid="e94f9180-97e7-4aa2-b436-5f7f8cd39fc0" Win64="no">
-                <File Name="fa.pak" Id="_locales_fa.pak_ce35c30a_39f2_4028_859d_86911c1855d2" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\fa.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_fa.pak_bbb5516f_3581_469f_adf3_3e9df2b39ee3" Guid="a3145952-2680-4b9b-9140-f8927769e116" Win64="no">
+                <File Name="fa.pak" Id="_locales_fa.pak_bbb5516f_3581_469f_adf3_3e9df2b39ee3" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\fa.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_fi.pak_9b29302a_307c_4895_a9ac_241454ff54ae" Guid="b66d6ade-14ab-41a0-94b0-f68c62c37a74" Win64="no">
-                <File Name="fi.pak" Id="_locales_fi.pak_9b29302a_307c_4895_a9ac_241454ff54ae" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\fi.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_fi.pak_6e1bc35a_7fec_4fb8_9b3f_786dfe1c3ae7" Guid="877875fd-cdb0-41ca-9106-a9b0275c6b78" Win64="no">
+                <File Name="fi.pak" Id="_locales_fi.pak_6e1bc35a_7fec_4fb8_9b3f_786dfe1c3ae7" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\fi.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_fil.pak_eb3cdcea_ca1c_4a79_aa28_7b4886166a21" Guid="020ea91b-51a4-4793-bb98-540757a4d8cf" Win64="no">
-                <File Name="fil.pak" Id="_locales_fil.pak_eb3cdcea_ca1c_4a79_aa28_7b4886166a21" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\fil.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_fil.pak_44b7d975_8971_4d7b_b1a2_6533631c1e43" Guid="017d97f7-0ff8-4345-86d2-c4cb8bc3a123" Win64="no">
+                <File Name="fil.pak" Id="_locales_fil.pak_44b7d975_8971_4d7b_b1a2_6533631c1e43" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\fil.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_fr.pak_ca193ac9_0204_41b9_8ca6_2f302abc6d33" Guid="87baf0ab-4d3c-4aca-ad6b-02af244e3026" Win64="no">
-                <File Name="fr.pak" Id="_locales_fr.pak_ca193ac9_0204_41b9_8ca6_2f302abc6d33" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\fr.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_fr.pak_b3a81eaa_a44e_4b22_9cc7_a43c1a386292" Guid="1c738c24-366a-4d87-8033-5c828544f873" Win64="no">
+                <File Name="fr.pak" Id="_locales_fr.pak_b3a81eaa_a44e_4b22_9cc7_a43c1a386292" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\fr.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_gu.pak_95aeae6c_0397_4ded_8954_a40645886e08" Guid="ece27897-8e56-40a6-ae76-65c73a7bd287" Win64="no">
-                <File Name="gu.pak" Id="_locales_gu.pak_95aeae6c_0397_4ded_8954_a40645886e08" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\gu.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_gu.pak_e25a4487_7be7_4957_888d_8007c58d2dda" Guid="0be00f16-903d-442f-9d40-1cde93fa19e4" Win64="no">
+                <File Name="gu.pak" Id="_locales_gu.pak_e25a4487_7be7_4957_888d_8007c58d2dda" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\gu.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_he.pak_766aa5c3_2b2c_49c5_9231_3cf8a5538274" Guid="e5dc8105-7269-4c49-b72d-15c58992fd27" Win64="no">
-                <File Name="he.pak" Id="_locales_he.pak_766aa5c3_2b2c_49c5_9231_3cf8a5538274" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\he.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_he.pak_e765570a_d1d0_4359_b01a_63cac483411b" Guid="e9fba9e7-d847-40a9-94e6-25027ec0272e" Win64="no">
+                <File Name="he.pak" Id="_locales_he.pak_e765570a_d1d0_4359_b01a_63cac483411b" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\he.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_hi.pak_e2fa48a0_863d_43d6_9c55_73e68c2f8184" Guid="951ffbfb-1e68-4631-b92d-3bbd4824f6ad" Win64="no">
-                <File Name="hi.pak" Id="_locales_hi.pak_e2fa48a0_863d_43d6_9c55_73e68c2f8184" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\hi.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_hi.pak_2651297d_b3c1_4275_b7ac_7f10cfa8a512" Guid="20e81edf-0424-4634-a242-734de9ac76b4" Win64="no">
+                <File Name="hi.pak" Id="_locales_hi.pak_2651297d_b3c1_4275_b7ac_7f10cfa8a512" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\hi.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_hr.pak_603bbd60_19c7_4204_a124_df0b24d0e350" Guid="f015f90b-addc-4c08-abbf-f053c736ae8b" Win64="no">
-                <File Name="hr.pak" Id="_locales_hr.pak_603bbd60_19c7_4204_a124_df0b24d0e350" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\hr.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_hr.pak_a5016de5_c04d_4a26_8b27_64e04c3cadaa" Guid="b2beefd8-3348-4b81-8eba-5b081fdeb26b" Win64="no">
+                <File Name="hr.pak" Id="_locales_hr.pak_a5016de5_c04d_4a26_8b27_64e04c3cadaa" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\hr.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_hu.pak_08c33511_51db_4afd_be95_090f040a4153" Guid="b4e09ffe-5a8e-4730-85d0-38a43f6ed1f7" Win64="no">
-                <File Name="hu.pak" Id="_locales_hu.pak_08c33511_51db_4afd_be95_090f040a4153" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\hu.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_hu.pak_54c4fcdd_d877_4ae3_b45a_83490bedc989" Guid="1cffe6ad-ccb2-49ab-8adb-b6917ad86d91" Win64="no">
+                <File Name="hu.pak" Id="_locales_hu.pak_54c4fcdd_d877_4ae3_b45a_83490bedc989" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\hu.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_id.pak_6e75ff26_7f21_466d_aa14_93b53c85f1b4" Guid="c4701e09-538c-4c7f-ab34-cd99fe38bbde" Win64="no">
-                <File Name="id.pak" Id="_locales_id.pak_6e75ff26_7f21_466d_aa14_93b53c85f1b4" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\id.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_id.pak_6c4f9de5_7f16_4cae_afa9_4407b018ca94" Guid="76c81fe8-d248-4cde-aea5-ab4b111d671b" Win64="no">
+                <File Name="id.pak" Id="_locales_id.pak_6c4f9de5_7f16_4cae_afa9_4407b018ca94" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\id.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_it.pak_d54ec12e_527d_4b72_8319_70cd94696f86" Guid="78ab3238-9936-41a7-b4e8-297fcbd4cc1b" Win64="no">
-                <File Name="it.pak" Id="_locales_it.pak_d54ec12e_527d_4b72_8319_70cd94696f86" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\it.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_it.pak_768c3b18_e97c_4918_bc6a_c62739d708c8" Guid="5c15e4cb-9434-4b4e-a938-5a2c113e7e33" Win64="no">
+                <File Name="it.pak" Id="_locales_it.pak_768c3b18_e97c_4918_bc6a_c62739d708c8" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\it.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_ja.pak_3f79867a_48f2_4e58_8806_6710d59b14e2" Guid="d1cd972d-fe2d-4447-932e-e7d422d604d1" Win64="no">
-                <File Name="ja.pak" Id="_locales_ja.pak_3f79867a_48f2_4e58_8806_6710d59b14e2" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ja.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_ja.pak_996cd73e_ec22_4e33_99dc_5b04fd2b34d2" Guid="150e1a59-c1e4-45d5-a189-e5386f59b49f" Win64="no">
+                <File Name="ja.pak" Id="_locales_ja.pak_996cd73e_ec22_4e33_99dc_5b04fd2b34d2" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ja.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_kn.pak_f7a0701a_5e0a_4f75_80e7_52f0998e9ba7" Guid="fd9d901e-70cf-48ff-894f-159edc23d9e2" Win64="no">
-                <File Name="kn.pak" Id="_locales_kn.pak_f7a0701a_5e0a_4f75_80e7_52f0998e9ba7" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\kn.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_kn.pak_06b40839_c034_4417_a88c_4bf5e2606197" Guid="74d5fe1a-c9d0-43ea-aec1-d882f8f6b3e5" Win64="no">
+                <File Name="kn.pak" Id="_locales_kn.pak_06b40839_c034_4417_a88c_4bf5e2606197" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\kn.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_ko.pak_2fe1d2df_77f4_4435_95ac_fd5521034ebe" Guid="7a4800ab-796c-43fe-8dea-4e556f43a430" Win64="no">
-                <File Name="ko.pak" Id="_locales_ko.pak_2fe1d2df_77f4_4435_95ac_fd5521034ebe" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ko.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_ko.pak_cf14afe9_bbba_4874_a465_5435c5c69ad3" Guid="459afa11-40c1-40fc-bbb0-006ba3f6eabd" Win64="no">
+                <File Name="ko.pak" Id="_locales_ko.pak_cf14afe9_bbba_4874_a465_5435c5c69ad3" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ko.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_lt.pak_424b1b6b_8408_4268_b6b0_9af813e71821" Guid="71a33cc7-70a7-49b7-8518-9406b1b54dc6" Win64="no">
-                <File Name="lt.pak" Id="_locales_lt.pak_424b1b6b_8408_4268_b6b0_9af813e71821" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\lt.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_lt.pak_9dd0b493_84bc_4777_9bd6_c5e1a6603483" Guid="4ed79300-8452-4531-a004-ad7c33a88635" Win64="no">
+                <File Name="lt.pak" Id="_locales_lt.pak_9dd0b493_84bc_4777_9bd6_c5e1a6603483" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\lt.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_lv.pak_925fa11c_1b11_4d04_9029_0fc843f6adaf" Guid="cf7568b2-9849-4cd4-9dea-07210db1f676" Win64="no">
-                <File Name="lv.pak" Id="_locales_lv.pak_925fa11c_1b11_4d04_9029_0fc843f6adaf" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\lv.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_lv.pak_085d3eb1_df3f_4e07_aa5f_96a560866b6a" Guid="e8464f43-fce7-42fa-9a75-60196e49a552" Win64="no">
+                <File Name="lv.pak" Id="_locales_lv.pak_085d3eb1_df3f_4e07_aa5f_96a560866b6a" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\lv.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_ml.pak_c66f5f68_11e2_4082_a9d2_a4b0014becb4" Guid="21e12a72-2908-49bd-9d68-a875a6193eba" Win64="no">
-                <File Name="ml.pak" Id="_locales_ml.pak_c66f5f68_11e2_4082_a9d2_a4b0014becb4" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ml.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_ml.pak_867c48c9_07c8_4e77_8f2b_0c90b58c7928" Guid="56b75fd4-e5d0-4914-8162-eff936a153df" Win64="no">
+                <File Name="ml.pak" Id="_locales_ml.pak_867c48c9_07c8_4e77_8f2b_0c90b58c7928" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ml.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_mr.pak_7917facd_b79c_4476_8f7c_1ad8686f40bf" Guid="1a5f35da-fa0e-49bf-a25f-d3978ca45e45" Win64="no">
-                <File Name="mr.pak" Id="_locales_mr.pak_7917facd_b79c_4476_8f7c_1ad8686f40bf" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\mr.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_mr.pak_946de111_790c_4613_a40a_1f55e85f939a" Guid="03f439f6-c81f-44b0-b4d8-8589060d6fd9" Win64="no">
+                <File Name="mr.pak" Id="_locales_mr.pak_946de111_790c_4613_a40a_1f55e85f939a" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\mr.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_ms.pak_e0eb7bf8_f246_4587_bdd5_5ce43e472356" Guid="dbc6de65-ce51-49ba-ac59-cfb9b48d0a06" Win64="no">
-                <File Name="ms.pak" Id="_locales_ms.pak_e0eb7bf8_f246_4587_bdd5_5ce43e472356" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ms.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_ms.pak_cf4df2bd_8c75_49d1_82d4_1f119346d755" Guid="5ee46b1c-58f4-44b4-be32-3e6cfc7c8c98" Win64="no">
+                <File Name="ms.pak" Id="_locales_ms.pak_cf4df2bd_8c75_49d1_82d4_1f119346d755" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ms.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_nb.pak_e63631c3_6a48_450e_bdb5_f04f4255978e" Guid="40771f18-743f-42de-831e-6180ba16fba9" Win64="no">
-                <File Name="nb.pak" Id="_locales_nb.pak_e63631c3_6a48_450e_bdb5_f04f4255978e" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\nb.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_nb.pak_f173bc5d_8ed1_4474_a4d0_165359fea679" Guid="a5965267-90a4-4be3-a850-55dd33087ab0" Win64="no">
+                <File Name="nb.pak" Id="_locales_nb.pak_f173bc5d_8ed1_4474_a4d0_165359fea679" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\nb.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_nl.pak_f799602d_846f_4515_ae07_f547aa8c451a" Guid="f17d3de1-637b-4809-83d4-3a06fe5a8fb6" Win64="no">
-                <File Name="nl.pak" Id="_locales_nl.pak_f799602d_846f_4515_ae07_f547aa8c451a" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\nl.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_nl.pak_64818eb5_05fc_44ba_827c_4f4592290209" Guid="11dfc92e-490b-47a5-a5df-7fce5883d8cf" Win64="no">
+                <File Name="nl.pak" Id="_locales_nl.pak_64818eb5_05fc_44ba_827c_4f4592290209" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\nl.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_pl.pak_a5e40880_c240_45f8_a9bf_1d671356c573" Guid="6bbf62aa-f92d-4056-96e5-2caf16641be4" Win64="no">
-                <File Name="pl.pak" Id="_locales_pl.pak_a5e40880_c240_45f8_a9bf_1d671356c573" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\pl.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_pl.pak_78bce1c9_8778_4da8_96ef_95b25a2042bf" Guid="c98c6014-af6e-4979-9406-d4a6e5b61aef" Win64="no">
+                <File Name="pl.pak" Id="_locales_pl.pak_78bce1c9_8778_4da8_96ef_95b25a2042bf" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\pl.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_pt_BR.pak_0c6af65b_62ac_4959_8ffa_77ae565cd57f" Guid="f89b3a5a-43b6-4f26-8dd4-9797035c3453" Win64="no">
-                <File Name="pt-BR.pak" Id="_locales_pt_BR.pak_0c6af65b_62ac_4959_8ffa_77ae565cd57f" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\pt-BR.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_pt_BR.pak_2022f95d_fba3_4a09_8f00_1f481e6e924e" Guid="0fff2d67-3718-48d3-bdda-a5ff65d99918" Win64="no">
+                <File Name="pt-BR.pak" Id="_locales_pt_BR.pak_2022f95d_fba3_4a09_8f00_1f481e6e924e" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\pt-BR.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_pt_PT.pak_58f5e921_65c6_47d7_879e_a17aad2c02bd" Guid="c5bce4e8-9d0d-4980-b70f-0bc1e786c170" Win64="no">
-                <File Name="pt-PT.pak" Id="_locales_pt_PT.pak_58f5e921_65c6_47d7_879e_a17aad2c02bd" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\pt-PT.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_pt_PT.pak_3d6fd553_b005_4e1f_b4e4_5ca433d59113" Guid="30fb8b55-5675-44a7-91a2-1870f58a9123" Win64="no">
+                <File Name="pt-PT.pak" Id="_locales_pt_PT.pak_3d6fd553_b005_4e1f_b4e4_5ca433d59113" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\pt-PT.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_ro.pak_cac04733_1ee1_4e66_9e66_67eb42cede63" Guid="1cba9b17-94ca-4dfc-a26d-d95dfc7faafc" Win64="no">
-                <File Name="ro.pak" Id="_locales_ro.pak_cac04733_1ee1_4e66_9e66_67eb42cede63" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ro.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_ro.pak_07777d0e_ead0_4d54_ba4e_1d96f5b3c6d6" Guid="5e3d7b2b-3ca6-4bba-9038-97ac27620eb3" Win64="no">
+                <File Name="ro.pak" Id="_locales_ro.pak_07777d0e_ead0_4d54_ba4e_1d96f5b3c6d6" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ro.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_ru.pak_320e8b6a_f15d_41f6_91f9_38e57f69eef3" Guid="4ca21d8d-a485-472c-b774-f08a8fb64a32" Win64="no">
-                <File Name="ru.pak" Id="_locales_ru.pak_320e8b6a_f15d_41f6_91f9_38e57f69eef3" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ru.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_ru.pak_91c29fe5_d904_4be6_9401_2467b9f67149" Guid="97a22d9c-d11e-4016-a2cb-e737e8f12588" Win64="no">
+                <File Name="ru.pak" Id="_locales_ru.pak_91c29fe5_d904_4be6_9401_2467b9f67149" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ru.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_sk.pak_a8002b32_9d32_475f_9f2f_9f0d37df8025" Guid="ec76e6e1-c4de-4f2d-83d5-0ad2bd66700b" Win64="no">
-                <File Name="sk.pak" Id="_locales_sk.pak_a8002b32_9d32_475f_9f2f_9f0d37df8025" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\sk.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_sk.pak_dd729ed2_78a1_42dc_b45d_7bae6a34eb3d" Guid="fc1bb623-da04-4054-b148-cd450b53fd4f" Win64="no">
+                <File Name="sk.pak" Id="_locales_sk.pak_dd729ed2_78a1_42dc_b45d_7bae6a34eb3d" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\sk.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_sl.pak_78a26853_08d6_428c_898b_09e19ba4798e" Guid="ff3cebb8-7f6b-42bd-9dd5-9032feefc178" Win64="no">
-                <File Name="sl.pak" Id="_locales_sl.pak_78a26853_08d6_428c_898b_09e19ba4798e" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\sl.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_sl.pak_68c30235_0aad_44a4_bde2_9d0c36e2bd0f" Guid="acad6bac-b222-4355-b292-6768fa35c920" Win64="no">
+                <File Name="sl.pak" Id="_locales_sl.pak_68c30235_0aad_44a4_bde2_9d0c36e2bd0f" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\sl.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_sr.pak_3944c6d9_7970_482f_a3a8_dd3c88b24bf4" Guid="ce5d1f48-9aa3-4a4d-9f9d-f5b060b5d1dd" Win64="no">
-                <File Name="sr.pak" Id="_locales_sr.pak_3944c6d9_7970_482f_a3a8_dd3c88b24bf4" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\sr.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_sr.pak_81df1bbd_a3bb_462b_8ac4_b7f8739afc8b" Guid="64cd3a08-9c93-4e64-a6ea-279d889d8bde" Win64="no">
+                <File Name="sr.pak" Id="_locales_sr.pak_81df1bbd_a3bb_462b_8ac4_b7f8739afc8b" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\sr.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_sv.pak_5a7ddf34_1393_437e_8369_b1f097a30652" Guid="79ace991-a367-4879-a26b-4a73989d6c06" Win64="no">
-                <File Name="sv.pak" Id="_locales_sv.pak_5a7ddf34_1393_437e_8369_b1f097a30652" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\sv.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_sv.pak_37af994f_ea32_4f1c_9978_1d890a81f0ed" Guid="e174d2ed-b53d-4908-a318-589c0affc171" Win64="no">
+                <File Name="sv.pak" Id="_locales_sv.pak_37af994f_ea32_4f1c_9978_1d890a81f0ed" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\sv.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_sw.pak_0cae7d9f_e066_493a_add1_078f7b38cedd" Guid="8cd5d899-d930-4184-ae58-4c0d4af7e7cd" Win64="no">
-                <File Name="sw.pak" Id="_locales_sw.pak_0cae7d9f_e066_493a_add1_078f7b38cedd" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\sw.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_sw.pak_28dea709_dd57_4449_8045_dfa155fa16c6" Guid="918c8646-3de7-4fed-9438-4b1dcec114d6" Win64="no">
+                <File Name="sw.pak" Id="_locales_sw.pak_28dea709_dd57_4449_8045_dfa155fa16c6" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\sw.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_ta.pak_d5b7b7fb_6487_4240_9368_c0fc8f30a948" Guid="dd0b7eb4-a7c3-410c-b6cb-120cd082488f" Win64="no">
-                <File Name="ta.pak" Id="_locales_ta.pak_d5b7b7fb_6487_4240_9368_c0fc8f30a948" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ta.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_ta.pak_2f9ca999_8a43_4db6_9262_f497feabb1b2" Guid="3903457d-5eb8-403d-98e5-d33077efe149" Win64="no">
+                <File Name="ta.pak" Id="_locales_ta.pak_2f9ca999_8a43_4db6_9262_f497feabb1b2" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\ta.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_te.pak_8d102b29_f30f_4036_9a0a_318436b2b423" Guid="d1879ee9-c3f5-442a-b4fa-697aacca7b5d" Win64="no">
-                <File Name="te.pak" Id="_locales_te.pak_8d102b29_f30f_4036_9a0a_318436b2b423" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\te.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_te.pak_78c9d952_7462_43a6_b842_358cfcc06006" Guid="83a238eb-eeac-4a65-a3c1-77abfaae6d7e" Win64="no">
+                <File Name="te.pak" Id="_locales_te.pak_78c9d952_7462_43a6_b842_358cfcc06006" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\te.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_th.pak_a97f3e5a_05b9_4060_8cf0_15cfaabf28da" Guid="b2d53edb-749a-4341-b13b-a7ea0c59eb9a" Win64="no">
-                <File Name="th.pak" Id="_locales_th.pak_a97f3e5a_05b9_4060_8cf0_15cfaabf28da" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\th.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_th.pak_86770c6a_567b_42fa_865a_b18b661b283a" Guid="b2c1c30f-5b97-477c-8fd7-2dd125b1fd5d" Win64="no">
+                <File Name="th.pak" Id="_locales_th.pak_86770c6a_567b_42fa_865a_b18b661b283a" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\th.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_tr.pak_70565b52_ae07_4482_ac33_7fc60b288f96" Guid="fa8b2ccc-00b3-4840-a0b4-5a6b7717e33b" Win64="no">
-                <File Name="tr.pak" Id="_locales_tr.pak_70565b52_ae07_4482_ac33_7fc60b288f96" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\tr.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_tr.pak_729716a6_6ee9_45d0_933b_5efc392b4a2b" Guid="72ba16b4-a2ba-4049-8289-fb23cca49d55" Win64="no">
+                <File Name="tr.pak" Id="_locales_tr.pak_729716a6_6ee9_45d0_933b_5efc392b4a2b" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\tr.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_uk.pak_11304e9b_6baf_42cc_a772_990bd5661c4d" Guid="979784be-276a-499d-9da4-3b5a3b5e125d" Win64="no">
-                <File Name="uk.pak" Id="_locales_uk.pak_11304e9b_6baf_42cc_a772_990bd5661c4d" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\uk.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_uk.pak_566610b8_4f4c_4be7_9495_b69ca9303b5b" Guid="1921d94d-f949-43a1-934d-010618ebd309" Win64="no">
+                <File Name="uk.pak" Id="_locales_uk.pak_566610b8_4f4c_4be7_9495_b69ca9303b5b" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\uk.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_vi.pak_7e369247_0b71_4c40_a0fd_12f8687c6cc0" Guid="faaa28e7-ab90-4cc2-992b-9398b42794bb" Win64="no">
-                <File Name="vi.pak" Id="_locales_vi.pak_7e369247_0b71_4c40_a0fd_12f8687c6cc0" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\vi.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_vi.pak_a1ff6cf0_c4dd_4fbd_8f2e_b42f2fa92b15" Guid="0b5b1d55-884d-4925-affc-45d6d208f95b" Win64="no">
+                <File Name="vi.pak" Id="_locales_vi.pak_a1ff6cf0_c4dd_4fbd_8f2e_b42f2fa92b15" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\vi.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_zh_CN.pak_6e02c22b_adcb_4ef8_b4df_d3f76b76488a" Guid="b5bd4451-480f-4c95-850d-92cd50368616" Win64="no">
-                <File Name="zh-CN.pak" Id="_locales_zh_CN.pak_6e02c22b_adcb_4ef8_b4df_d3f76b76488a" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\zh-CN.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_zh_CN.pak_926ca8d4_b1c1_4678_902b_10ea81751dc4" Guid="32b5f253-1e91-43fe-aafd-c73bbca46341" Win64="no">
+                <File Name="zh-CN.pak" Id="_locales_zh_CN.pak_926ca8d4_b1c1_4678_902b_10ea81751dc4" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\zh-CN.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_locales_zh_TW.pak_322768a9_6f96_4241_ac8b_826b3b861faf" Guid="9c370081-e0e4-475d-9fe8-2b255153fb56" Win64="no">
-                <File Name="zh-TW.pak" Id="_locales_zh_TW.pak_322768a9_6f96_4241_ac8b_826b3b861faf" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\zh-TW.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_locales_zh_TW.pak_d2748703_d5ef_45bc_b57c_1b71fb4d836d" Guid="34dd40d0-b354-412a-ab95-c34608e672ae" Win64="no">
+                <File Name="zh-TW.pak" Id="_locales_zh_TW.pak_d2748703_d5ef_45bc_b57c_1b71fb4d836d" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\locales\zh-TW.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
             </Directory>
-            <Directory Id="_resources_30998b3c_239f_4d8a_bec4_7b58f0948845" Name="resources">
-              <Directory Id="_resources_app_bf3d6641_9f73_4bed_a9b5_1a04724357d3" Name="app">
-                <Directory Id="_resources_app_assets_a2ef056f_c241_4bfb_b72f_45c42b9a8d9b" Name="assets">
-                  <Directory Id="_resources_app_assets_blocks_86fba235_bca0_43e7_a69f_25e9cb7bd30f" Name="blocks">
-                    <Component Id="_air.png_d0fa22c6_ae3f_4d78_a7ed_992067c3b80f" Guid="74b0dab4-9272-4834-b0c8-4acdcb8b90a0" Win64="no">
-                      <File Name="air.png" Id="_air.png_d0fa22c6_ae3f_4d78_a7ed_992067c3b80f" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\blocks\air.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Directory Id="_resources_3c736a4c_829a_4248_bcf9_4a0035210e97" Name="resources">
+              <Directory Id="_resources_app_cad0e6f0_e6da_49b8_82f7_8beb7e76b759" Name="app">
+                <Directory Id="_resources_app_assets_62451ca3_a380_4aa8_b0f9_824bba87653e" Name="assets">
+                  <Directory Id="_resources_app_assets_blocks_b9335b39_e003_414b_964c_3cf29cbc3b5c" Name="blocks">
+                    <Component Id="_air.png_a8a8c091_ed16_493b_b3a5_018cb4e9c339" Guid="c7b668d4-fa84-4b2f-ac55-04fa90266219" Win64="no">
+                      <File Name="air.png" Id="_air.png_a8a8c091_ed16_493b_b3a5_018cb4e9c339" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\blocks\air.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                     </Component>
-                    <Component Id="_dirt.png_7affdb4f_d6ad_40b0_9afc_5bacbbb366bf" Guid="215820e9-e5e5-4da6-b827-45a163d76f89" Win64="no">
-                      <File Name="dirt.png" Id="_dirt.png_7affdb4f_d6ad_40b0_9afc_5bacbbb366bf" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\blocks\dirt.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                    <Component Id="_dirt.png_3fbd35fc_2640_4de9_8957_097b6703063d" Guid="5665aa74-2772-467e-8545-165d14f4ffb3" Win64="no">
+                      <File Name="dirt.png" Id="_dirt.png_3fbd35fc_2640_4de9_8957_097b6703063d" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\blocks\dirt.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                     </Component>
-                    <Component Id="_grass.png_18bdcbc1_74b0_4823_8d4c_e5ca36d99d20" Guid="2b6cd150-efc4-48e2-b1bb-52b850fe7981" Win64="no">
-                      <File Name="grass.png" Id="_grass.png_18bdcbc1_74b0_4823_8d4c_e5ca36d99d20" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\blocks\grass.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                    <Component Id="_grass.png_8a8f080e_0a59_4c69_b43e_72fa3ca71e55" Guid="4c0360af-1c01-4bce-baca-b3c676395362" Win64="no">
+                      <File Name="grass.png" Id="_grass.png_8a8f080e_0a59_4c69_b43e_72fa3ca71e55" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\blocks\grass.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                     </Component>
-                    <Component Id="_leaves.png_58b2debe_c5f9_4450_968f_05dab3089d5d" Guid="ae70bd1b-fd76-455d-bbf5-04c1da5299b5" Win64="no">
-                      <File Name="leaves.png" Id="_leaves.png_58b2debe_c5f9_4450_968f_05dab3089d5d" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\blocks\leaves.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                    <Component Id="_leaves.png_47bb1b59_1d83_42a3_a6cc_251d55e62804" Guid="b1ddc192-2358-46eb-aa3f-a6fe6b803034" Win64="no">
+                      <File Name="leaves.png" Id="_leaves.png_47bb1b59_1d83_42a3_a6cc_251d55e62804" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\blocks\leaves.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                     </Component>
-                    <Component Id="_wood.png_5e9f85fe_b093_498c_b48a_f71bde5464dd" Guid="34a2bbec-8edc-4cc3-8303-9cec178a913c" Win64="no">
-                      <File Name="wood.png" Id="_wood.png_5e9f85fe_b093_498c_b48a_f71bde5464dd" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\blocks\wood.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                    <Component Id="_wood.png_c4b8e0fc_668d_4696_93f5_a8af2678e1b6" Guid="7aa14b61-1f27-460e-aeda-464660c41151" Win64="no">
+                      <File Name="wood.png" Id="_wood.png_c4b8e0fc_668d_4696_93f5_a8af2678e1b6" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\blocks\wood.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                     </Component>
                   </Directory>
-                  <Directory Id="_resources_app_assets_entities_661d610b_530b_4147_b39a_318271346cd3" Name="entities">
-                    <Directory Id="_resources_app_assets_entities_air_c1c60a66_b550_4404_9fdd_60bdca1ad5a2" Name="air">
-                      <Component Id="_default.png_346f7498_11a7_47b1_a808_22c0e488bb32" Guid="da1761ce-3e8e-4e0c-ae93-a7e649b800d5" Win64="no">
-                        <File Name="default.png" Id="_default.png_346f7498_11a7_47b1_a808_22c0e488bb32" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\air\default.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  <Directory Id="_resources_app_assets_entities_61522d86_db62_4cba_8190_34d92c8ce3ea" Name="entities">
+                    <Directory Id="_resources_app_assets_entities_air_419664d0_92bd_43e8_a374_61021394e41a" Name="air">
+                      <Component Id="_default.png_1dd976d8_9715_49ef_824c_953c350ba5eb" Guid="0c5da63c-b160-4d04-b597-b0fcb4ee7e40" Win64="no">
+                        <File Name="default.png" Id="_default.png_1dd976d8_9715_49ef_824c_953c350ba5eb" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\air\default.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                       </Component>
                     </Directory>
-                    <Directory Id="_player_16969e1b_31ca_49da_85b5_0e5cf2721399" Name="player">
-                      <Component Id="_default_rotated.png_8e247c24_7c62_41b3_b138_552214f690e0" Guid="d7fb7564-a70a-48b6-ba1a-e700c8d091e4" Win64="no">
-                        <File Name="default-rotated.png" Id="_default_rotated.png_8e247c24_7c62_41b3_b138_552214f690e0" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\player\default-rotated.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                    <Directory Id="_player_103253b1_40ca_4e1f_ab97_10af14404806" Name="player">
+                      <Component Id="_default_rotated.png_958d4cce_27d9_4be4_98dc_c0c1e9bf6865" Guid="de79c9ba-ab2f-43ff-b2dc-6a6003c72176" Win64="no">
+                        <File Name="default-rotated.png" Id="_default_rotated.png_958d4cce_27d9_4be4_98dc_c0c1e9bf6865" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\player\default-rotated.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                       </Component>
-                      <Component Id="_default.png_662ffbc4_5139_4d06_a2df_71a8ba791b8e" Guid="688c8b74-8569-4401-bf7a-507214a11623" Win64="no">
-                        <File Name="default.png" Id="_default.png_662ffbc4_5139_4d06_a2df_71a8ba791b8e" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\player\default.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                      <Component Id="_default.png_a0cf2b69_1e30_4819_87da_6a5a229776e6" Guid="4fa569d1-c636-49dd-896c-c0da10abe1f0" Win64="no">
+                        <File Name="default.png" Id="_default.png_a0cf2b69_1e30_4819_87da_6a5a229776e6" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\player\default.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                       </Component>
-                      <Component Id="_flying_down_rotated.png_4239e841_5b6a_40ce_9453_f8b387600700" Guid="c416ed3e-c646-4377-8d67-15f90905b111" Win64="no">
-                        <File Name="flying-down-rotated.png" Id="_flying_down_rotated.png_4239e841_5b6a_40ce_9453_f8b387600700" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\player\flying-down-rotated.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                      <Component Id="_flying_down_rotated.png_8ef460c2_a0dc_4dcc_a4aa_c97172afdc49" Guid="1e2f444f-f2c9-4974-8b34-85e4617f6bcf" Win64="no">
+                        <File Name="flying-down-rotated.png" Id="_flying_down_rotated.png_8ef460c2_a0dc_4dcc_a4aa_c97172afdc49" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\player\flying-down-rotated.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                       </Component>
-                      <Component Id="_flying_down.png_5718be16_7b8e_4f92_8a4a_ff96d6c6d04c" Guid="15e72fc6-9f9c-49fe-aef6-87d85d958567" Win64="no">
-                        <File Name="flying-down.png" Id="_flying_down.png_5718be16_7b8e_4f92_8a4a_ff96d6c6d04c" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\player\flying-down.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                      <Component Id="_flying_down.png_5d0b1856_e4e2_44b9_ba17_29c81650c571" Guid="d18e2c94-9275-4898-a458-d15237fa8ad3" Win64="no">
+                        <File Name="flying-down.png" Id="_flying_down.png_5d0b1856_e4e2_44b9_ba17_29c81650c571" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\player\flying-down.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                       </Component>
-                      <Component Id="_flying_rotated.png_168e6e6b_c900_440d_9709_53922da5abe3" Guid="3e3db340-9110-4465-8f8d-eec6bb5fcef2" Win64="no">
-                        <File Name="flying-rotated.png" Id="_flying_rotated.png_168e6e6b_c900_440d_9709_53922da5abe3" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\player\flying-rotated.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                      <Component Id="_flying_rotated.png_adbaeb5a_f2f9_4445_8790_2dd0f1426322" Guid="24a410b9-2961-47d6-b893-31b1db6ad122" Win64="no">
+                        <File Name="flying-rotated.png" Id="_flying_rotated.png_adbaeb5a_f2f9_4445_8790_2dd0f1426322" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\player\flying-rotated.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                       </Component>
-                      <Component Id="_flying.png_cbb019f3_b81f_42dc_bfaf_b55dfaa625a1" Guid="9ffb2dcb-261a-4242-bde5-12603b4eec17" Win64="no">
-                        <File Name="flying.png" Id="_flying.png_cbb019f3_b81f_42dc_bfaf_b55dfaa625a1" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\player\flying.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                      <Component Id="_flying.png_9733e1f3_9f8d_407b_9637_10b2a72a858f" Guid="14a8b397-27a8-4df5-b4f0-085187a0d80c" Win64="no">
+                        <File Name="flying.png" Id="_flying.png_9733e1f3_9f8d_407b_9637_10b2a72a858f" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\entities\player\flying.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                       </Component>
                     </Directory>
                   </Directory>
 
-                  <Directory Id="_resources_app_assets_worlds_be0dfa9c_6a12_4569_82db_845039a36728" Name="worlds">
-                    <Component Id="_default.png_4e262ab3_a2a6_4337_887b_1b9d81c5c0bf" Guid="b7b2763a-74e1-4639-a8c4-3bda76b69f25" Win64="no">
-                      <File Name="default.png" Id="_default.png_4e262ab3_a2a6_4337_887b_1b9d81c5c0bf" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\worlds\default.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  <Directory Id="_resources_app_assets_worlds_d1141aba_0358_4111_bc4e_3e8ddd218fa1" Name="worlds">
+                    <Component Id="_default.png_51b33e01_c5fb_4f4e_bac2_355c83ec1324" Guid="0eb099e2-bed0-4e37-91ce-26b98b1fff36" Win64="no">
+                      <File Name="default.png" Id="_default.png_51b33e01_c5fb_4f4e_bac2_355c83ec1324" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\worlds\default.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                     </Component>
-                  </Directory>                  <Component Id="_resources_app_assets_cursor.png_14dafe9a_40a5_4db7_aafb_b365b9c1aef7" Guid="35b24dac-31a8-4949-9072-0c39b3eb09a9" Win64="no">
-                    <File Name="cursor.png" Id="_resources_app_assets_cursor.png_14dafe9a_40a5_4db7_aafb_b365b9c1aef7" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\cursor.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Directory>                  <Component Id="_resources_app_assets_cursor.png_a15865ea_0e8e_4cb8_88b8_d3043a7e5593" Guid="fb801a23-60be-4d69-aaa7-0a452cc83852" Win64="no">
+                    <File Name="cursor.png" Id="_resources_app_assets_cursor.png_a15865ea_0e8e_4cb8_88b8_d3043a7e5593" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\cursor.png" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                   </Component>
-                  <Component Id="_msi_background.jpg_237e1c02_52d4_4367_adbb_6d35af4ac4fb" Guid="9e97c9e7-0680-431d-94ed-d4727dd55827" Win64="no">
-                    <File Name="msi-background.jpg" Id="_msi_background.jpg_237e1c02_52d4_4367_adbb_6d35af4ac4fb" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\msi-background.jpg" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
-                  </Component>
-                </Directory>
-
-                <Directory Id="_resources_app_lib_60dfb562_951c_4956_bb13_2a5e20cc6a09" Name="lib">
-                  <Component Id="_resources_app_lib_ActionResult.js_d119f164_9d8e_417a_b672_97f1210ebcd4" Guid="bc3fe76c-2b50-40cc-bebc-a509fd70687d" Win64="no">
-                    <File Name="ActionResult.js" Id="_resources_app_lib_ActionResult.js_d119f164_9d8e_417a_b672_97f1210ebcd4" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\ActionResult.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
-                  </Component>
-                  <Component Id="_resources_app_lib_Block.js_cadbc92e_ed73_4850_9d3a_d084fe78d129" Guid="2316d996-6a17-4927-ab02-6e2e8e789a95" Win64="no">
-                    <File Name="Block.js" Id="_resources_app_lib_Block.js_cadbc92e_ed73_4850_9d3a_d084fe78d129" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Block.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
-                  </Component>
-                  <Component Id="_resources_app_lib_BlockType.js_c793a292_c176_46e2_aef1_0dd9bc9c62f8" Guid="801232b3-18b1-4867-9131-01adfe75a782" Win64="no">
-                    <File Name="BlockType.js" Id="_resources_app_lib_BlockType.js_c793a292_c176_46e2_aef1_0dd9bc9c62f8" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\BlockType.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
-                  </Component>
-                  <Component Id="_resources_app_lib_Blocks.js_b22afa68_292a_4c2d_a695_68d4a5e5251d" Guid="86056c98-a530-40e9-acbf-2be22d22e1f1" Win64="no">
-                    <File Name="Blocks.js" Id="_resources_app_lib_Blocks.js_b22afa68_292a_4c2d_a695_68d4a5e5251d" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Blocks.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
-                  </Component>
-                  <Component Id="_resources_app_lib_Entities.js_9b5d174d_3f43_4ad6_a802_a12fd6f74efe" Guid="3bd7d843-9b3f-4127-8686-e605e3ea6a74" Win64="no">
-                    <File Name="Entities.js" Id="_resources_app_lib_Entities.js_9b5d174d_3f43_4ad6_a802_a12fd6f74efe" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Entities.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
-                  </Component>
-                  <Component Id="_resources_app_lib_Entity.js_86ff0378_b15d_4ad2_a083_76da387122a6" Guid="0d3d4038-1fba-41c8-b060-b9c85a4ca446" Win64="no">
-                    <File Name="Entity.js" Id="_resources_app_lib_Entity.js_86ff0378_b15d_4ad2_a083_76da387122a6" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Entity.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
-                  </Component>
-                  <Component Id="_resources_app_lib_EntityType.js_7eced9f2_8c61_4c53_a0e6_e478b46a15d9" Guid="4cb8fe50-ea91-4570-86d5-47429b493307" Win64="no">
-                    <File Name="EntityType.js" Id="_resources_app_lib_EntityType.js_7eced9f2_8c61_4c53_a0e6_e478b46a15d9" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\EntityType.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
-                  </Component>
-                  <Component Id="_resources_app_lib_Player.js_9bf29cb9_3896_4f66_83a4_31d3d6bc7120" Guid="9c4be334-98d8-4941-b4b2-8529b5ed34b4" Win64="no">
-                    <File Name="Player.js" Id="_resources_app_lib_Player.js_9bf29cb9_3896_4f66_83a4_31d3d6bc7120" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Player.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
-                  </Component>
-                  <Component Id="_resources_app_lib_Renderer.js_cefb90c5_4503_4b53_b468_849e2a012a03" Guid="08f03ca8-ef77-46e7-a3ee-fd0d083cfb67" Win64="no">
-                    <File Name="Renderer.js" Id="_resources_app_lib_Renderer.js_cefb90c5_4503_4b53_b468_849e2a012a03" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Renderer.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
-                  </Component>
-                  <Component Id="_resources_app_lib_Resource.js_63f0e395_a466_457a_8be3_4964a0f675ce" Guid="0112f3c4-ed9b-4dea-b3f5-02960ce38a98" Win64="no">
-                    <File Name="Resource.js" Id="_resources_app_lib_Resource.js_63f0e395_a466_457a_8be3_4964a0f675ce" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Resource.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
-                  </Component>
-                  <Component Id="_resources_app_lib_SimplexNoise.js_99e1c123_d609_447f_9019_4b84a31e7555" Guid="11b4ca3b-cc00-4619-822a-193684e4e278" Win64="no">
-                    <File Name="SimplexNoise.js" Id="_resources_app_lib_SimplexNoise.js_99e1c123_d609_447f_9019_4b84a31e7555" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\SimplexNoise.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
-                  </Component>
-                  <Component Id="_TerrainGenerator.js_67d5d024_c2be_4c4b_bdb2_22151a84fdf9" Guid="bdba3b40-e8c9-4e4c-83ad-80fe2925f35e" Win64="no">
-                    <File Name="TerrainGenerator.js" Id="_TerrainGenerator.js_67d5d024_c2be_4c4b_bdb2_22151a84fdf9" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\TerrainGenerator.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
-                  </Component>
-                  <Component Id="_resources_app_lib_World.js_fd59e18f_fb1a_4131_98d9_fa595e5ebb24" Guid="ed999d94-9061-47d5-84c9-340415fe12df" Win64="no">
-                    <File Name="World.js" Id="_resources_app_lib_World.js_fd59e18f_fb1a_4131_98d9_fa595e5ebb24" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\World.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  <Component Id="_msi_background.jpg_5ae52213_f7fd_433a_b147_fcf237204d52" Guid="5395f163-1967-48e5-8450-68eea01b90b2" Win64="no">
+                    <File Name="msi-background.jpg" Id="_msi_background.jpg_5ae52213_f7fd_433a_b147_fcf237204d52" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\assets\msi-background.jpg" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                   </Component>
                 </Directory>
-                <Directory Id="_resources_app_msi_69555867_b372_4b6d_8f97_ff3c825e23be" Name="msi">
-                  <Component Id="_Parakeet_Simulator.msi_78185d94_f671_41d0_aa22_be14b9026bfd" Guid="b9fc0016-fae8-4fbe-b8c5-06bb188c9354" Win64="no">
-                    <File Name="Parakeet Simulator.msi" Id="_Parakeet_Simulator.msi_78185d94_f671_41d0_aa22_be14b9026bfd" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\msi\Parakeet Simulator.msi" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+
+                <Directory Id="_resources_app_lib_a5c4b4b8_13c2_485f_9128_796235434fca" Name="lib">
+                  <Component Id="_resources_app_lib_ActionResult.js_fc8a0821_cc04_40ef_b1b2_23ad33a89d1c" Guid="267d0370-7baf-44b4-a614-cc06e87b040b" Win64="no">
+                    <File Name="ActionResult.js" Id="_resources_app_lib_ActionResult.js_fc8a0821_cc04_40ef_b1b2_23ad33a89d1c" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\ActionResult.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                   </Component>
-                  <Component Id="_Parakeet_Simulator.wixobj_de8a9373_faca_4680_b887_3aff9d65fc68" Guid="49c05be2-0789-41aa-b2eb-a38c399e017b" Win64="no">
-                    <File Name="Parakeet Simulator.wixobj" Id="_Parakeet_Simulator.wixobj_de8a9373_faca_4680_b887_3aff9d65fc68" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\msi\Parakeet Simulator.wixobj" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  <Component Id="_resources_app_lib_Block.js_4a534eee_c3ee_49f1_8e94_189cb15a1c69" Guid="34bc7ff1-6785-4bd8-ab18-2e6c8af69815" Win64="no">
+                    <File Name="Block.js" Id="_resources_app_lib_Block.js_4a534eee_c3ee_49f1_8e94_189cb15a1c69" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Block.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                   </Component>
-                  <Component Id="_Parakeet_Simulator.wixpdb_b7a085b6_f279_45a0_897a_05a27dea2753" Guid="be876a1e-34ec-49ba-82e5-d4868ea28e06" Win64="no">
-                    <File Name="Parakeet Simulator.wixpdb" Id="_Parakeet_Simulator.wixpdb_b7a085b6_f279_45a0_897a_05a27dea2753" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\msi\Parakeet Simulator.wixpdb" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  <Component Id="_resources_app_lib_BlockType.js_c0700d1a_052e_475d_b9c9_49e3a76c417f" Guid="eb23a535-1d54-4d7d-994a-ffb6d551de33" Win64="no">
+                    <File Name="BlockType.js" Id="_resources_app_lib_BlockType.js_c0700d1a_052e_475d_b9c9_49e3a76c417f" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\BlockType.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                   </Component>
-                  <Component Id="_Parakeet_Simulator.wxs_4242ed26_f68e_494a_ac0d_bb933a2e75e5" Guid="4c387fbe-60f9-46a7-b8c7-9eba33ddd844" Win64="no">
-                    <File Name="Parakeet Simulator.wxs" Id="_Parakeet_Simulator.wxs_4242ed26_f68e_494a_ac0d_bb933a2e75e5" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\msi\Parakeet Simulator.wxs" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  <Component Id="_resources_app_lib_Blocks.js_bc38d107_c04b_49a8_a8e5_fcb3845c949d" Guid="c4f9e1d0-2c3f-455f-bed7-03b4d5206910" Win64="no">
+                    <File Name="Blocks.js" Id="_resources_app_lib_Blocks.js_bc38d107_c04b_49a8_a8e5_fcb3845c949d" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Blocks.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                   </Component>
-                </Directory>
-                <Directory Id="_resources_app_node_modules_01bb86e0_5c39_428a_9090_2b5ea627077b" Name="node_modules">
-                  <Directory Id="__bitdisaster_fd296e32_eb1b_4ee6_a042_5c2389fb75dd" Name="@bitdisaster">
-
-                  </Directory>
-                  <Directory Id="__develar_57adec8b_f3d5_4f15_8ecc_179708255c9f" Name="@develar">
-
-                  </Directory>
-                  <Directory Id="__electron_bbefc9fa_35ff_4c36_a24f_2c72b12a1351" Name="@electron">
-
-                  </Directory>
-                  <Directory Id="_resources_app_node_modules__malept_402cae6c_3a88_4ad5_a7bc_e772acc33249" Name="@malept">
-
-                  </Directory>
-                  <Directory Id="__sindresorhus_2d87afb8_aa73_4df8_8028_895f631ad0f1" Name="@sindresorhus">
-
-                  </Directory>
-                  <Directory Id="__szmarczak_cde474a9_1113_49df_8a3d_3f6b302ee1ef" Name="@szmarczak">
-
-                  </Directory>
-                  <Directory Id="__tootallnate_7b8f16eb_9630_4a9e_b3f2_5446c02df2d2" Name="@tootallnate">
-
-                  </Directory>
-                  <Directory Id="_resources_app_node_modules__types_58ceb463_3b13_4279_984f_9e2fa521c56a" Name="@types">
-
-                  </Directory>                  <Component Id="_.package_lock.json_59160506_de8f_4368_9086_30f451a0eed3" Guid="6d2212c9-9fc5-4a5e-a140-12d9e5256f0b" Win64="no">
-                    <File Name=".package-lock.json" Id="_.package_lock.json_59160506_de8f_4368_9086_30f451a0eed3" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\node_modules\.package-lock.json" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  <Component Id="_resources_app_lib_Entities.js_b6fac071_f8bd_4668_abed_8dcca9317c41" Guid="b1f1d2bc-ddc8-4778-a6fb-3fdadb7180d0" Win64="no">
+                    <File Name="Entities.js" Id="_resources_app_lib_Entities.js_b6fac071_f8bd_4668_abed_8dcca9317c41" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Entities.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                   </Component>
-                  <Component Id="_.yarn_integrity_0ed7a844_b8d2_4d06_bd14_2d26dddbe34b" Guid="99e25a49-1ab2-4a1a-bf64-9547ba7426bb" Win64="no">
-                    <File Name=".yarn-integrity" Id="_.yarn_integrity_0ed7a844_b8d2_4d06_bd14_2d26dddbe34b" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\node_modules\.yarn-integrity" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  <Component Id="_resources_app_lib_Entity.js_877e8029_8407_4564_a28b_00582250425a" Guid="645e64ab-3d96-4a54-a47f-7a4042a4842d" Win64="no">
+                    <File Name="Entity.js" Id="_resources_app_lib_Entity.js_877e8029_8407_4564_a28b_00582250425a" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Entity.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Component>
+                  <Component Id="_resources_app_lib_EntityType.js_6bf034a6_2416_4dee_97fe_88199a70aaaa" Guid="fd8562a2-574f-42fd-b056-deccb19506ae" Win64="no">
+                    <File Name="EntityType.js" Id="_resources_app_lib_EntityType.js_6bf034a6_2416_4dee_97fe_88199a70aaaa" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\EntityType.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Component>
+                  <Component Id="_resources_app_lib_Player.js_b59f8d70_f842_4113_93b0_0d1b493e3332" Guid="d4a60ca3-fb8c-4b85-8cb6-a02c1d91d188" Win64="no">
+                    <File Name="Player.js" Id="_resources_app_lib_Player.js_b59f8d70_f842_4113_93b0_0d1b493e3332" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Player.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Component>
+                  <Component Id="_resources_app_lib_Renderer.js_529ab5eb_d540_4119_86ab_2385ebd909d8" Guid="4412565e-ff01-4395-a5e1-c6f4c30a59b7" Win64="no">
+                    <File Name="Renderer.js" Id="_resources_app_lib_Renderer.js_529ab5eb_d540_4119_86ab_2385ebd909d8" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Renderer.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Component>
+                  <Component Id="_resources_app_lib_Resource.js_cb7039ba_9281_433b_8fc5_41207328faa5" Guid="e3a7c81a-6d41-4060-b054-87fc8597b824" Win64="no">
+                    <File Name="Resource.js" Id="_resources_app_lib_Resource.js_cb7039ba_9281_433b_8fc5_41207328faa5" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\Resource.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Component>
+                  <Component Id="_resources_app_lib_SimplexNoise.js_fc73bd4f_ab98_46c5_9c3c_c731424feb55" Guid="26aae3fb-b6b1-443b-ab21-8a0d6c8155b8" Win64="no">
+                    <File Name="SimplexNoise.js" Id="_resources_app_lib_SimplexNoise.js_fc73bd4f_ab98_46c5_9c3c_c731424feb55" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\SimplexNoise.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Component>
+                  <Component Id="_TerrainGenerator.js_ec8f1661_6987_4560_a1ac_05238caa0f1f" Guid="97d5862f-9ef4-40a7-81a2-ce270910ef36" Win64="no">
+                    <File Name="TerrainGenerator.js" Id="_TerrainGenerator.js_ec8f1661_6987_4560_a1ac_05238caa0f1f" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\TerrainGenerator.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Component>
+                  <Component Id="_resources_app_lib_World.js_8b3664a3_eab6_4bf2_b657_56f0f7948dcf" Guid="7956a2d9-c2e3-4098-a002-b3782f82d43c" Win64="no">
+                    <File Name="World.js" Id="_resources_app_lib_World.js_8b3664a3_eab6_4bf2_b657_56f0f7948dcf" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\lib\World.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                   </Component>
                 </Directory>
-                <Component Id="_resources_app_README.md_4bd978d1_7b54_4d06_9686_e42da19e1901" Guid="04813768-095e-4b0b-8ff1-a3bb5fa4667b" Win64="no">
-                  <File Name="README.md" Id="_resources_app_README.md_4bd978d1_7b54_4d06_9686_e42da19e1901" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\README.md" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                <Directory Id="_resources_app_msi_7bd3f7b9_ef1a_439e_8551_3df12bff36dd" Name="msi">
+                  <Component Id="_Parakeet_Simulator.msi_a2ca882e_8d92_4f03_9164_615c97f07892" Guid="ac2ebf2e-d3e7-4779-b4ab-dff25817fcf8" Win64="no">
+                    <File Name="Parakeet Simulator.msi" Id="_Parakeet_Simulator.msi_a2ca882e_8d92_4f03_9164_615c97f07892" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\msi\Parakeet Simulator.msi" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Component>
+                  <Component Id="_Parakeet_Simulator.wixobj_fbf759bc_ce0c_4df6_bb8b_20329281eb3f" Guid="5de6660c-5d37-4b9d-b07d-c74c11e519bd" Win64="no">
+                    <File Name="Parakeet Simulator.wixobj" Id="_Parakeet_Simulator.wixobj_fbf759bc_ce0c_4df6_bb8b_20329281eb3f" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\msi\Parakeet Simulator.wixobj" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Component>
+                  <Component Id="_Parakeet_Simulator.wixpdb_4594247e_57c6_4383_aca9_6c469add3ee3" Guid="6957d9d1-c172-4f7f-845e-95a3892f3756" Win64="no">
+                    <File Name="Parakeet Simulator.wixpdb" Id="_Parakeet_Simulator.wixpdb_4594247e_57c6_4383_aca9_6c469add3ee3" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\msi\Parakeet Simulator.wixpdb" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Component>
+                  <Component Id="_Parakeet_Simulator.wxs_6642044a_10f1_44ab_8dd5_94bc19d425e0" Guid="4d2f6ab8-0523-4c04-b34a-a9491b6946b2" Win64="no">
+                    <File Name="Parakeet Simulator.wxs" Id="_Parakeet_Simulator.wxs_6642044a_10f1_44ab_8dd5_94bc19d425e0" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\msi\Parakeet Simulator.wxs" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Component>
+                </Directory>
+                <Directory Id="_resources_app_node_modules_15495727_644b_442a_89eb_22def90d9c24" Name="node_modules">
+                  <Directory Id="__bitdisaster_0f935bdd_4ca8_4070_b5ae_22004263140d" Name="@bitdisaster">
+
+                  </Directory>
+                  <Directory Id="__develar_91a1367c_00cd_435f_9083_f75e1d9e81d9" Name="@develar">
+
+                  </Directory>
+                  <Directory Id="__electron_acca9c21_f57d_4863_bd3b_2ccfc237914e" Name="@electron">
+
+                  </Directory>
+                  <Directory Id="_resources_app_node_modules__malept_736136f0_0a34_4583_9268_2ddb13c7871b" Name="@malept">
+
+                  </Directory>
+                  <Directory Id="__sindresorhus_f394b7fc_e7e6_40ab_95c3_726c85cca24d" Name="@sindresorhus">
+
+                  </Directory>
+                  <Directory Id="__szmarczak_2bc91b36_997a_4585_a8e9_53c1be85d65b" Name="@szmarczak">
+
+                  </Directory>
+                  <Directory Id="__tootallnate_295a24e9_099e_4a48_b741_30cbdb7db2e0" Name="@tootallnate">
+
+                  </Directory>
+                  <Directory Id="_resources_app_node_modules__types_6fc855d3_27a9_44d0_abf6_1298b0a058c1" Name="@types">
+
+                  </Directory>                  <Component Id="_.package_lock.json_eae676d1_603e_47aa_8039_aba2cebfcc39" Guid="4edff43f-3ab3-4eea-a763-0daa1c176256" Win64="no">
+                    <File Name=".package-lock.json" Id="_.package_lock.json_eae676d1_603e_47aa_8039_aba2cebfcc39" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\node_modules\.package-lock.json" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Component>
+                  <Component Id="_.yarn_integrity_919cd3c3_3816_4a7c_b3a9_b89cc1c06a8e" Guid="89a32028-6519-4218-bca7-708a22d1e88e" Win64="no">
+                    <File Name=".yarn-integrity" Id="_.yarn_integrity_919cd3c3_3816_4a7c_b3a9_b89cc1c06a8e" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\node_modules\.yarn-integrity" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                  </Component>
+                </Directory>
+                <Component Id="_resources_app_.gitattributes_6e94e0c0_bc3b_47a5_a593_49241c38c889" Guid="3bd00808-75b4-4252-ab08-6aa01c0d919d" Win64="no">
+                  <File Name=".gitattributes" Id="_resources_app_.gitattributes_6e94e0c0_bc3b_47a5_a593_49241c38c889" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\.gitattributes" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                 </Component>
-                <Component Id="_resources_app_app.js_efe4864f_1653_4d44_b30d_cce788030fc2" Guid="e5df8342-4c62-458e-b2d4-a70fd8baffdd" Win64="no">
-                  <File Name="app.js" Id="_resources_app_app.js_efe4864f_1653_4d44_b30d_cce788030fc2" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\app.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                <Component Id="_resources_app_README.md_74e373c8_dd18_4aac_afcb_a5a362533e1a" Guid="41b9b40f-77be-4fe2-b609-a6f5a25d120f" Win64="no">
+                  <File Name="README.md" Id="_resources_app_README.md_74e373c8_dd18_4aac_afcb_a5a362533e1a" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\README.md" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                 </Component>
-                <Component Id="_resources_app_build_msi.js_e9f3fd92_6d68_4464_ba97_01261bf11772" Guid="7d6c321a-b5b3-45bc-9e1d-dc9398f7917a" Win64="no">
-                  <File Name="build-msi.js" Id="_resources_app_build_msi.js_e9f3fd92_6d68_4464_ba97_01261bf11772" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\build-msi.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                <Component Id="_resources_app_app.js_21460122_cf26_4b98_b6df_bc5060eb6e26" Guid="2735b9f8-05ce-483b-aa4c-3b97701b0437" Win64="no">
+                  <File Name="app.js" Id="_resources_app_app.js_21460122_cf26_4b98_b6df_bc5060eb6e26" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\app.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                 </Component>
-                <Component Id="_resources_app_font.ttf_5cc99e06_aa2b_455e_88f2_31eb9ac76844" Guid="370274b1-f8f8-4fc4-b936-b90a355d2d86" Win64="no">
-                  <File Name="font.ttf" Id="_resources_app_font.ttf_5cc99e06_aa2b_455e_88f2_31eb9ac76844" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\font.ttf" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                <Component Id="_resources_app_build_msi.js_4870364c_25e5_4d5e_8573_ec5294b9ea4a" Guid="004312ab-c878-48e6-9cd9-7275fa0fc210" Win64="no">
+                  <File Name="build-msi.js" Id="_resources_app_build_msi.js_4870364c_25e5_4d5e_8573_ec5294b9ea4a" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\build-msi.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                 </Component>
-                <Component Id="_resources_app_icon.ico_bd380693_caa2_4e96_8f59_e20af0960996" Guid="ca0d5c1d-f4b0-4840-ab9d-4b59acf25a68" Win64="no">
-                  <File Name="icon.ico" Id="_resources_app_icon.ico_bd380693_caa2_4e96_8f59_e20af0960996" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\icon.ico" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                <Component Id="_resources_app_font.ttf_e15e1de3_0ffe_4aa5_ba34_4cf230a6f549" Guid="84cffa83-f746-4b8f-9d31-13b57a1f0aa1" Win64="no">
+                  <File Name="font.ttf" Id="_resources_app_font.ttf_e15e1de3_0ffe_4aa5_ba34_4cf230a6f549" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\font.ttf" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                 </Component>
-                <Component Id="_resources_app_index.html_6f4b7cec_9d5c_4070_be19_6d7c97e7ec7c" Guid="3e3a63ad-cbbb-41d1-ae50-76c0b2e61490" Win64="no">
-                  <File Name="index.html" Id="_resources_app_index.html_6f4b7cec_9d5c_4070_be19_6d7c97e7ec7c" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\index.html" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                <Component Id="_resources_app_icon.ico_927df9f3_5a49_402f_a2cd_63878b666841" Guid="159c6be2-a8ff-45b7-a931-b5c445a11df1" Win64="no">
+                  <File Name="icon.ico" Id="_resources_app_icon.ico_927df9f3_5a49_402f_a2cd_63878b666841" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\icon.ico" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                 </Component>
-                <Component Id="_resources_app_main.js_b0de5a60_fdc3_4c74_842f_2f19e80cc543" Guid="53795d6c-3352-459a-9b7d-4827de1a2a0c" Win64="no">
-                  <File Name="main.js" Id="_resources_app_main.js_b0de5a60_fdc3_4c74_842f_2f19e80cc543" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\main.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                <Component Id="_resources_app_index.html_269210ef_3ec2_4f54_8f56_b7a194f149a5" Guid="1425ffb9-9aab-44e5-ae95-4333b804d61a" Win64="no">
+                  <File Name="index.html" Id="_resources_app_index.html_269210ef_3ec2_4f54_8f56_b7a194f149a5" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\index.html" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                 </Component>
-                <Component Id="_resources_app_package.json_2c05911c_3e47_485f_8de0_5eda82600ab5" Guid="a04e6b0a-b510-4615-ae92-6ffbf69faa55" Win64="no">
-                  <File Name="package.json" Id="_resources_app_package.json_2c05911c_3e47_485f_8de0_5eda82600ab5" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\package.json" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                <Component Id="_resources_app_main.js_6c1a47a1_ef13_4764_9f62_611b1fbb3c15" Guid="e05787e2-b999-470f-ab39-724d87c9fb09" Win64="no">
+                  <File Name="main.js" Id="_resources_app_main.js_6c1a47a1_ef13_4764_9f62_611b1fbb3c15" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\main.js" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                 </Component>
-                <Component Id="_resources_app_style.css_72292887_8778_49f0_b4fb_eaeea3cdd152" Guid="a74c6154-4f7b-4c90-be07-e6c18704c2ac" Win64="no">
-                  <File Name="style.css" Id="_resources_app_style.css_72292887_8778_49f0_b4fb_eaeea3cdd152" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\style.css" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                <Component Id="_resources_app_msi.bat_2c0e2663_2c74_4c22_aa94_2355693ba9d2" Guid="380bb82f-f466-4d42-bc04-b40a842ecebe" Win64="no">
+                  <File Name="msi.bat" Id="_resources_app_msi.bat_2c0e2663_2c74_4c22_aa94_2355693ba9d2" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\msi.bat" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                </Component>
+                <Component Id="_resources_app_package.json_d48a3cd4_7b72_4887_b9de_5039d519edd6" Guid="80dcf6cd-d7ee-42c1-8f35-549073ca52b6" Win64="no">
+                  <File Name="package.json" Id="_resources_app_package.json_d48a3cd4_7b72_4887_b9de_5039d519edd6" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\package.json" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+                </Component>
+                <Component Id="_resources_app_style.css_581453dc_b335_4313_b71b_63aa9f87785e" Guid="0edf7f10-c7aa-4b0b-b333-3dd44bd744bf" Win64="no">
+                  <File Name="style.css" Id="_resources_app_style.css_581453dc_b335_4313_b71b_63aa9f87785e" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources\app\style.css" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
                 </Component>
               </Directory>
 
             </Directory>
 
-            <Directory Id="_swiftshader_10126ab7_9d8e_4164_801b_7bda71ee9076" Name="swiftshader">
-              <Component Id="_swiftshader_libEGL.dll_1162f203_bd2b_4742_bd8e_0ef5bb6f7dae" Guid="dfcabfa9-9186-439d-8696-8e52f8751288" Win64="no">
-                <File Name="libEGL.dll" Id="_swiftshader_libEGL.dll_1162f203_bd2b_4742_bd8e_0ef5bb6f7dae" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\swiftshader\libEGL.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Directory Id="_swiftshader_2b9cc966_30ba_4e51_a436_a034893b0482" Name="swiftshader">
+              <Component Id="_swiftshader_libEGL.dll_e2631ce3_0942_45d2_8f46_00cfd97572f8" Guid="ce0e612d-b2a4-42db-a34a-91f65c3f0754" Win64="no">
+                <File Name="libEGL.dll" Id="_swiftshader_libEGL.dll_e2631ce3_0942_45d2_8f46_00cfd97572f8" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\swiftshader\libEGL.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-              <Component Id="_swiftshader_libGLESv2.dll_77981ae8_b368_4479_9f47_384b0b5ae367" Guid="a3a9058f-ae51-4f5b-9c56-c6c021918b4e" Win64="no">
-                <File Name="libGLESv2.dll" Id="_swiftshader_libGLESv2.dll_77981ae8_b368_4479_9f47_384b0b5ae367" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\swiftshader\libGLESv2.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+              <Component Id="_swiftshader_libGLESv2.dll_82c94503_11d0_4b78_a317_5b217f861292" Guid="c2c1888c-d013-4c2a-9a40-ed1e27381497" Win64="no">
+                <File Name="libGLESv2.dll" Id="_swiftshader_libGLESv2.dll_82c94503_11d0_4b78_a317_5b217f861292" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\swiftshader\libGLESv2.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
               </Component>
-            </Directory>            <Component Id="_LICENSE_051224b2_54dd_47e9_a7b5_a0507309cc8f" Guid="978df22d-935a-47e2-80b0-10c7a954f268" Win64="no">
-              <File Name="LICENSE" Id="_LICENSE_051224b2_54dd_47e9_a7b5_a0507309cc8f" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\LICENSE" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            </Directory>            <Component Id="_LICENSE_706cbb4a_6ddf_4711_84af_ff91b556526d" Guid="78545944-ecfa-4036-acd6-00d35a13f647" Win64="no">
+              <File Name="LICENSE" Id="_LICENSE_706cbb4a_6ddf_4711_84af_ff91b556526d" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\LICENSE" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_LICENSES.chromium.html_8b016b1b_05ec_48b2_afb8_11d0879587a3" Guid="0bd28375-1fdc-47db-b7b8-9dd8291fe460" Win64="no">
-              <File Name="LICENSES.chromium.html" Id="_LICENSES.chromium.html_8b016b1b_05ec_48b2_afb8_11d0879587a3" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\LICENSES.chromium.html" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_LICENSES.chromium.html_f15b55b6_4fed_4a88_a47e_74b3496d66ab" Guid="b009ef1d-3db9-4667-b461-bbdcfe0dc51a" Win64="no">
+              <File Name="LICENSES.chromium.html" Id="_LICENSES.chromium.html_f15b55b6_4fed_4a88_a47e_74b3496d66ab" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\LICENSES.chromium.html" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_Parakeet_Simulator.exe_496e3e34_b3f9_468c_959e_7c6fd03ce257" Guid="77cf7543-af31-436c-b2d4-97888a1e96d5" Win64="no">
-              <File Name="Parakeet Simulator.exe" Id="_Parakeet_Simulator.exe_496e3e34_b3f9_468c_959e_7c6fd03ce257" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\Parakeet Simulator.exe" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_Parakeet_Simulator.exe_703957e1_817c_4642_a3b3_e8708714c841" Guid="e1392995-395e-48be-872e-cad7bb24f313" Win64="no">
+              <File Name="Parakeet Simulator.exe" Id="_Parakeet_Simulator.exe_703957e1_817c_4642_a3b3_e8708714c841" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\Parakeet Simulator.exe" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_chrome_100_percent.pak_c8e03bf7_2ede_4888_adf0_61334de0aeff" Guid="45647ceb-64f0-4f95-b339-b619f0ee5ea7" Win64="no">
-              <File Name="chrome_100_percent.pak" Id="_chrome_100_percent.pak_c8e03bf7_2ede_4888_adf0_61334de0aeff" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\chrome_100_percent.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_chrome_100_percent.pak_5ea97486_24cf_4bdb_8693_c6a540943676" Guid="96b78491-c4f3-4dd2-b232-65683047af26" Win64="no">
+              <File Name="chrome_100_percent.pak" Id="_chrome_100_percent.pak_5ea97486_24cf_4bdb_8693_c6a540943676" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\chrome_100_percent.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_chrome_200_percent.pak_ca9dedbb_5154_4e30_b817_958d37773c7c" Guid="9b812cb2-a162-42b0-9bc2-1daf2e93c410" Win64="no">
-              <File Name="chrome_200_percent.pak" Id="_chrome_200_percent.pak_ca9dedbb_5154_4e30_b817_958d37773c7c" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\chrome_200_percent.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_chrome_200_percent.pak_463f7e5f_1075_4a6a_ab80_bd9a6242fcef" Guid="7c407a8a-ab96-4f49-ab10-18754d15afc3" Win64="no">
+              <File Name="chrome_200_percent.pak" Id="_chrome_200_percent.pak_463f7e5f_1075_4a6a_ab80_bd9a6242fcef" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\chrome_200_percent.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_d3dcompiler_47.dll_af2001ae_b8d1_498b_901f_7d7722dac984" Guid="bb21ab18-b5cd-47b4-866f-f38ba2f3eaf8" Win64="no">
-              <File Name="d3dcompiler_47.dll" Id="_d3dcompiler_47.dll_af2001ae_b8d1_498b_901f_7d7722dac984" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\d3dcompiler_47.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_d3dcompiler_47.dll_6b9c979d_7d1a_4aa2_9eda_60286f790dc3" Guid="e4afa6ac-d1dc-411c-900c-6e65d1dc4720" Win64="no">
+              <File Name="d3dcompiler_47.dll" Id="_d3dcompiler_47.dll_6b9c979d_7d1a_4aa2_9eda_60286f790dc3" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\d3dcompiler_47.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_ffmpeg.dll_856b64eb_dba1_48eb_936b_15f36dd431d2" Guid="6b2fd7f2-1541-4439-80c3-5ef3c229a676" Win64="no">
-              <File Name="ffmpeg.dll" Id="_ffmpeg.dll_856b64eb_dba1_48eb_936b_15f36dd431d2" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\ffmpeg.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_ffmpeg.dll_787ced0c_a9fb_4af0_b518_46152cddae37" Guid="a94b7fc1-5316-4a87-a217-35b64d848acc" Win64="no">
+              <File Name="ffmpeg.dll" Id="_ffmpeg.dll_787ced0c_a9fb_4af0_b518_46152cddae37" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\ffmpeg.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_icudtl.dat_ea873425_0f55_4fd1_aaab_30e51c7c1ef5" Guid="28a4ab5e-a0ee-47d1-a2c7-d9f46348d6b4" Win64="no">
-              <File Name="icudtl.dat" Id="_icudtl.dat_ea873425_0f55_4fd1_aaab_30e51c7c1ef5" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\icudtl.dat" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_icudtl.dat_ec5df12f_2eb1_49e7_8dcf_0ec7da3d95ec" Guid="95120c0d-7195-475b-b252-d358bd7ed30a" Win64="no">
+              <File Name="icudtl.dat" Id="_icudtl.dat_ec5df12f_2eb1_49e7_8dcf_0ec7da3d95ec" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\icudtl.dat" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_libEGL.dll_055d0040_092f_4756_b0a7_298e2b5960bd" Guid="a44f04c8-d4f7-4f42-b5d3-56da8086c5cc" Win64="no">
-              <File Name="libEGL.dll" Id="_libEGL.dll_055d0040_092f_4756_b0a7_298e2b5960bd" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\libEGL.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_libEGL.dll_28b4f80b_6806_4ee6_b6f5_d3667e0d6e95" Guid="da43e2a1-abaa-4464-bd51-12dd0a3ce887" Win64="no">
+              <File Name="libEGL.dll" Id="_libEGL.dll_28b4f80b_6806_4ee6_b6f5_d3667e0d6e95" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\libEGL.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_libGLESv2.dll_c52c6e1a_1eba_4cf1_a503_251c8d494fc4" Guid="366f827a-c90e-4d60-abd5-5ccf73cd746f" Win64="no">
-              <File Name="libGLESv2.dll" Id="_libGLESv2.dll_c52c6e1a_1eba_4cf1_a503_251c8d494fc4" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\libGLESv2.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_libGLESv2.dll_96544f8d_bd3b_431c_b316_424197b9f4c2" Guid="28229dc0-bdcf-43c7-be6e-837ffa0d5c10" Win64="no">
+              <File Name="libGLESv2.dll" Id="_libGLESv2.dll_96544f8d_bd3b_431c_b316_424197b9f4c2" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\libGLESv2.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_resources.pak_9c967772_34e8_4b19_a7d4_21d0164d2163" Guid="9659bbbc-84e4-4573-8820-3f87b72195a1" Win64="no">
-              <File Name="resources.pak" Id="_resources.pak_9c967772_34e8_4b19_a7d4_21d0164d2163" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_resources.pak_22881765_e054_4491_8eb7_d247995dbfc7" Guid="7610c9a6-4229-45ec-8458-702562a615e4" Win64="no">
+              <File Name="resources.pak" Id="_resources.pak_22881765_e054_4491_8eb7_d247995dbfc7" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\resources.pak" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_snapshot_blob.bin_5fde4742_ec49_4a70_ac77_caf2f8ac3641" Guid="91cece2b-3e4d-426a-8b06-a135f660513e" Win64="no">
-              <File Name="snapshot_blob.bin" Id="_snapshot_blob.bin_5fde4742_ec49_4a70_ac77_caf2f8ac3641" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\snapshot_blob.bin" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_snapshot_blob.bin_26165bf1_e894_415a_b0de_b0eae03593fb" Guid="a5597aa6-0755-4135-a9b9-91f2eab7c2a1" Win64="no">
+              <File Name="snapshot_blob.bin" Id="_snapshot_blob.bin_26165bf1_e894_415a_b0de_b0eae03593fb" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\snapshot_blob.bin" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_v8_context_snapshot.bin_79060350_5d6b_454e_ac44_fb563bfc8aac" Guid="36d6a561-deda-460d-b593-275a696478ba" Win64="no">
-              <File Name="v8_context_snapshot.bin" Id="_v8_context_snapshot.bin_79060350_5d6b_454e_ac44_fb563bfc8aac" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\v8_context_snapshot.bin" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_v8_context_snapshot.bin_2ce243f7_85af_4e0e_b817_24505cfc2eea" Guid="41c8c800-2cf2-4089-8a75-4945a7700664" Win64="no">
+              <File Name="v8_context_snapshot.bin" Id="_v8_context_snapshot.bin_2ce243f7_85af_4e0e_b817_24505cfc2eea" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\v8_context_snapshot.bin" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_version_3aaa4b8f_48f8_450d_898d_2cbe07c77b95" Guid="b3e1b5c6-eeac-4b59-b5c9-0e45bfd3abd1" Win64="no">
-              <File Name="version" Id="_version_3aaa4b8f_48f8_450d_898d_2cbe07c77b95" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\version" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_version_26e1ea20_803d_4fd1_91a5_5509b4ede148" Guid="8489039b-a60f-4aec-9536-347244b3bf36" Win64="no">
+              <File Name="version" Id="_version_26e1ea20_803d_4fd1_91a5_5509b4ede148" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\version" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_vk_swiftshader.dll_77a5d0ab_bc7c_406f_b50b_0915234105f2" Guid="69a093c6-a253-49e9-b1f6-e7ac67b34d10" Win64="no">
-              <File Name="vk_swiftshader.dll" Id="_vk_swiftshader.dll_77a5d0ab_bc7c_406f_b50b_0915234105f2" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\vk_swiftshader.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_vk_swiftshader.dll_8d327dce_2f6b_47b9_8f5b_52ab20899862" Guid="7d9a7383-dca4-4f27-804e-5b536b363270" Win64="no">
+              <File Name="vk_swiftshader.dll" Id="_vk_swiftshader.dll_8d327dce_2f6b_47b9_8f5b_52ab20899862" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\vk_swiftshader.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_vk_swiftshader_icd.json_ca433548_9085_4e57_84be_11364ed44a6b" Guid="68e8624c-3e6b-43a6-93c7-106c1c386090" Win64="no">
-              <File Name="vk_swiftshader_icd.json" Id="_vk_swiftshader_icd.json_ca433548_9085_4e57_84be_11364ed44a6b" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\vk_swiftshader_icd.json" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_vk_swiftshader_icd.json_abf06073_b939_4ceb_a807_bbb8cd164c75" Guid="6b907e62-b62f-43fe-a483-6e7466ca402f" Win64="no">
+              <File Name="vk_swiftshader_icd.json" Id="_vk_swiftshader_icd.json_abf06073_b939_4ceb_a807_bbb8cd164c75" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\vk_swiftshader_icd.json" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
-            <Component Id="_vulkan_1.dll_786c0e91_b763_469c_b34a_6ba0a3647f12" Guid="8f8ada02-00f2-4bd4-abe8-c49565745584" Win64="no">
-              <File Name="vulkan-1.dll" Id="_vulkan_1.dll_786c0e91_b763_469c_b34a_6ba0a3647f12" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\vulkan-1.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+            <Component Id="_vulkan_1.dll_728bca8a_674c_4e8b_9c5d_9778e7fd3117" Guid="cee5bd58-9d03-412b-943a-a9e5606418bf" Win64="no">
+              <File Name="vulkan-1.dll" Id="_vulkan_1.dll_728bca8a_674c_4e8b_9c5d_9778e7fd3117" Source="C:\Users\NikTea\Documents\GitHub\parakeet-simulator\Parakeet Simulator-win32-x64\vulkan-1.dll" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
             </Component>
           </Directory>
-          <Component Id="_Parakeet_Simulator.exe_0c67f8df_ff13_4b36_8fec_8002f75827ef" Guid="9a333d2e-3117-4e51-b516-75b349eabf27" Win64="no">
-            <File Name="Parakeet Simulator.exe" Id="_Parakeet_Simulator.exe_0c67f8df_ff13_4b36_8fec_8002f75827ef" Source="C:\Users\NikTea\AppData\Local\Temp\Parakeet SimulatorVaHTWR\Parakeet Simulator.exe" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+          <Component Id="_Parakeet_Simulator.exe_4da448ca_b357_43bd_97b5_7820237d4221" Guid="9fa4dc91-8f0c-48d8-a59a-61a752356810" Win64="no">
+            <File Name="Parakeet Simulator.exe" Id="_Parakeet_Simulator.exe_4da448ca_b357_43bd_97b5_7820237d4221" Source="C:\Users\NikTea\AppData\Local\Temp\Parakeet SimulatordtMIeh\Parakeet Simulator.exe" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
           </Component>
-          <Component Id="_.installInfo.json_588141a3_8fff_4434_972c_3b969ae9addf" Guid="207b4cf0-6b14-4dfc-a7d9-370e0ed9904c" Win64="no">
-            <File Name=".installInfo.json" Id="_.installInfo.json_588141a3_8fff_4434_972c_3b969ae9addf" Source="C:\Users\NikTea\AppData\Local\Temp\.installInfoIIkBuY\.installInfo.json" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
+          <Component Id="_.installInfo.json_5925aa14_03b6_4155_8603_64c14c71d47c" Guid="bc4e8212-689b-45d3-b533-b01b2dac9e92" Win64="no">
+            <File Name=".installInfo.json" Id="_.installInfo.json_5925aa14_03b6_4155_8603_64c14c71d47c" Source="C:\Users\NikTea\AppData\Local\Temp\.installInfoCc0wgd\.installInfo.json" KeyPath="yes" Checksum="yes" ProcessorArchitecture="x86"/>
           </Component>
-          <Component Id="RegistryInstallPath" Guid="81b8343c-b003-4280-99a2-8b0b74c6e086" Win64="no">
-            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F7FB7EC1-CCA7-4E7C-8E71-52EF97636876}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
+          <Component Id="RegistryInstallPath" Guid="217ca180-9d41-406c-b866-934d1d781b98" Win64="no">
+            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{823B391B-1DBD-4E8A-A2B0-91AC49FC1F5E}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
               <RegistryValue Name="InstallPath" Type="string" Value="[APPLICATIONROOTDIRECTORY]" KeyPath="yes"/>
             </RegistryKey>
           </Component>
-          <Component Id="UninstallDisplayName" Guid="940320b6-ac8c-4f5c-a2f2-6d83f2be07b5" Win64="no">
-            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F7FB7EC1-CCA7-4E7C-8E71-52EF97636876}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
+          <Component Id="UninstallDisplayName" Guid="3e368c67-a36c-4774-ad56-932f2ab7714a" Win64="no">
+            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{823B391B-1DBD-4E8A-A2B0-91AC49FC1F5E}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
               <RegistryValue Name="DisplayName" Type="string" Value="[VisibleProductName]" KeyPath="yes"/>
             </RegistryKey>
           </Component>
-          <Component Id="UninstallPublisher" Guid="10bbaaf8-7770-4898-b91b-f67315d16194" Win64="no">
-            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F7FB7EC1-CCA7-4E7C-8E71-52EF97636876}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
+          <Component Id="UninstallPublisher" Guid="65e7ac2e-95e8-41d8-83c3-ac24a9c853b6" Win64="no">
+            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{823B391B-1DBD-4E8A-A2B0-91AC49FC1F5E}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
               <RegistryValue Name="Publisher" Type="string" Value="EntityPlantt" KeyPath="yes"/>
             </RegistryKey>
           </Component>
-          <Component Id="UninstallDisplayVersion" Guid="1831d465-92b8-4f2b-9f49-752b1b14b0dc" Win64="no">
-            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F7FB7EC1-CCA7-4E7C-8E71-52EF97636876}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
+          <Component Id="UninstallDisplayVersion" Guid="668c5da3-2677-4dbf-ba85-76359ff2653e" Win64="no">
+            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{823B391B-1DBD-4E8A-A2B0-91AC49FC1F5E}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
               <RegistryValue Name="DisplayVersion" Type="string" Value="1.0.0" KeyPath="yes"/>
             </RegistryKey>
           </Component>
-          <Component Id="UninstallModifyString" Guid="4f5ce792-2806-43c5-9702-88bc2abd1822" Win64="no">
-            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F7FB7EC1-CCA7-4E7C-8E71-52EF97636876}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
-              <RegistryValue Name="ModifyPath" Type="expandable" Value="MsiExec.exe /I {F7FB7EC1-CCA7-4E7C-8E71-52EF97636876}" KeyPath="yes"/>
+          <Component Id="UninstallModifyString" Guid="8910559e-7d5e-4f88-bd5e-735a4328caa6" Win64="no">
+            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{823B391B-1DBD-4E8A-A2B0-91AC49FC1F5E}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
+              <RegistryValue Name="ModifyPath" Type="expandable" Value="MsiExec.exe /I {823B391B-1DBD-4E8A-A2B0-91AC49FC1F5E}" KeyPath="yes"/>
             </RegistryKey>
           </Component>
-          <Component Id="UninstallString" Guid="e587062d-660b-4fe4-a569-4c6bf590de5f" Win64="no">
-            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F7FB7EC1-CCA7-4E7C-8E71-52EF97636876}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
-              <RegistryValue Name="UninstallString" Type="expandable" Value="MsiExec.exe /X {F7FB7EC1-CCA7-4E7C-8E71-52EF97636876}" KeyPath="yes"/>
+          <Component Id="UninstallString" Guid="1f8afe9c-abbc-4f59-9545-e66935b59ab7" Win64="no">
+            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{823B391B-1DBD-4E8A-A2B0-91AC49FC1F5E}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
+              <RegistryValue Name="UninstallString" Type="expandable" Value="MsiExec.exe /X {823B391B-1DBD-4E8A-A2B0-91AC49FC1F5E}" KeyPath="yes"/>
             </RegistryKey>
           </Component>
-          <Component Id="UninstallDisplayIcon" Guid="f59059cb-be34-4dba-a7ed-1a5449155a3f" Win64="no">
-            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F7FB7EC1-CCA7-4E7C-8E71-52EF97636876}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
+          <Component Id="UninstallDisplayIcon" Guid="5aa750ee-0efd-433f-bce6-c7dcdf622df7" Win64="no">
+            <RegistryKey Root="HKMU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{823B391B-1DBD-4E8A-A2B0-91AC49FC1F5E}.msq" ForceCreateOnInstall="no" ForceDeleteOnUninstall="yes">
               <RegistryValue Name="DisplayIcon" Type="expandable" Value="[SystemFolder]msiexec.exe" KeyPath="yes"/>
             </RegistryKey>
           </Component>
@@ -573,7 +579,7 @@
 
     <!-- Step 3: Add app to Start Menu -->
     <DirectoryRef Id="ApplicationProgramsFolder">
-      <Component Id="ApplicationShortcut" Guid="ef8963d8-55f6-484b-a827-4ec81d10e7b7" Win64="no">
+      <Component Id="ApplicationShortcut" Guid="44ba40bc-e828-4065-8a90-affd6739615e" Win64="no">
         <Shortcut Id="ApplicationStartMenuShortcut"
                   Name="Parakeet Simulator"
                   Description="A HTML/CSS/JS game about a parakeet (budgerigar)"
@@ -593,7 +599,7 @@
 
    <!-- Step 4: Add app desktop shortcut --> 
     <DirectoryRef Id="DesktopFolder">
-      <Component Id="DesktopShortcut" Guid="d9a803bd-3a99-47be-9c6a-6b4b273c86f8" >
+      <Component Id="DesktopShortcut" Guid="281eb096-a729-4aec-bb70-ee5696832349" >
           <Shortcut Id="MyDesktopShortcut"
                     Name="Parakeet Simulator"
                     Description="A HTML/CSS/JS game about a parakeet (budgerigar)"
@@ -612,7 +618,7 @@
     <!-- Lets cleanup any files that are were not part of the initial install
     via this MSI. Such as newer versions installed by the auto-updater. -->
     <DirectoryRef Id="APPLICATIONROOTDIRECTORY">
-      <Component Id="PurgeOnUninstall" Guid="593231e8-0c7b-42a3-be02-68a83fb5b710" Win64="no">
+      <Component Id="PurgeOnUninstall" Guid="98b66611-c6de-401a-bbb6-f44ec03ce69b" Win64="no">
         <CreateFolder/>
         <util:RemoveFolderEx On="uninstall" Property="INSTALLPATH" />
       </Component>
@@ -621,123 +627,125 @@
     <Feature Id="Complete" Title="Parakeet Simulator (1.0.0)" Description="The complete package." Display="expand" Level="1" ConfigurableDirectory="APPLICATIONROOTDIRECTORY">
       <!-- Step 5: Tell WiX to install the files -->
       <Feature Id="MainApplication" Title="Main Application" Level="1" Description="The main components to run the applications." >
-        <ComponentRef Id="_locales_am.pak_a544431c_54fd_4eea_98b1_62cd4205b858" />
-        <ComponentRef Id="_locales_ar.pak_8b9aaa3e_567d_4547_bfd8_1f08a6e6cb91" />
-        <ComponentRef Id="_locales_bg.pak_4b9dc686_376e_468e_b6bb_3e49ab5cae88" />
-        <ComponentRef Id="_locales_bn.pak_cf6ea6f2_ecba_4301_b554_f01198d4a25b" />
-        <ComponentRef Id="_locales_ca.pak_d0b12eb5_cfe4_4fca_a536_cd61fc68c8d3" />
-        <ComponentRef Id="_locales_cs.pak_be3d9a79_a065_4274_b717_f93a0af5102a" />
-        <ComponentRef Id="_locales_da.pak_71a0edce_0cbc_4dee_acbe_c48fc60dd111" />
-        <ComponentRef Id="_locales_de.pak_cc538810_eb1e_4abe_a1fc_eb910ef3d964" />
-        <ComponentRef Id="_locales_el.pak_234ae20e_e5aa_42cb_b7f4_772a1f759d33" />
-        <ComponentRef Id="_locales_en_GB.pak_cc85ae72_80bb_4c8d_a59b_84909867ff6f" />
-        <ComponentRef Id="_locales_en_US.pak_263a5f97_7614_4446_91b2_9193f01ecb92" />
-        <ComponentRef Id="_locales_es_419.pak_85a5767a_95d0_45a8_91bb_cc247c9eb551" />
-        <ComponentRef Id="_locales_es.pak_f979b03b_e846_428a_96a4_c4eb0a1d6525" />
-        <ComponentRef Id="_locales_et.pak_c12ec990_536e_44a5_bd0e_ad67063b5ec8" />
-        <ComponentRef Id="_locales_fa.pak_ce35c30a_39f2_4028_859d_86911c1855d2" />
-        <ComponentRef Id="_locales_fi.pak_9b29302a_307c_4895_a9ac_241454ff54ae" />
-        <ComponentRef Id="_locales_fil.pak_eb3cdcea_ca1c_4a79_aa28_7b4886166a21" />
-        <ComponentRef Id="_locales_fr.pak_ca193ac9_0204_41b9_8ca6_2f302abc6d33" />
-        <ComponentRef Id="_locales_gu.pak_95aeae6c_0397_4ded_8954_a40645886e08" />
-        <ComponentRef Id="_locales_he.pak_766aa5c3_2b2c_49c5_9231_3cf8a5538274" />
-        <ComponentRef Id="_locales_hi.pak_e2fa48a0_863d_43d6_9c55_73e68c2f8184" />
-        <ComponentRef Id="_locales_hr.pak_603bbd60_19c7_4204_a124_df0b24d0e350" />
-        <ComponentRef Id="_locales_hu.pak_08c33511_51db_4afd_be95_090f040a4153" />
-        <ComponentRef Id="_locales_id.pak_6e75ff26_7f21_466d_aa14_93b53c85f1b4" />
-        <ComponentRef Id="_locales_it.pak_d54ec12e_527d_4b72_8319_70cd94696f86" />
-        <ComponentRef Id="_locales_ja.pak_3f79867a_48f2_4e58_8806_6710d59b14e2" />
-        <ComponentRef Id="_locales_kn.pak_f7a0701a_5e0a_4f75_80e7_52f0998e9ba7" />
-        <ComponentRef Id="_locales_ko.pak_2fe1d2df_77f4_4435_95ac_fd5521034ebe" />
-        <ComponentRef Id="_locales_lt.pak_424b1b6b_8408_4268_b6b0_9af813e71821" />
-        <ComponentRef Id="_locales_lv.pak_925fa11c_1b11_4d04_9029_0fc843f6adaf" />
-        <ComponentRef Id="_locales_ml.pak_c66f5f68_11e2_4082_a9d2_a4b0014becb4" />
-        <ComponentRef Id="_locales_mr.pak_7917facd_b79c_4476_8f7c_1ad8686f40bf" />
-        <ComponentRef Id="_locales_ms.pak_e0eb7bf8_f246_4587_bdd5_5ce43e472356" />
-        <ComponentRef Id="_locales_nb.pak_e63631c3_6a48_450e_bdb5_f04f4255978e" />
-        <ComponentRef Id="_locales_nl.pak_f799602d_846f_4515_ae07_f547aa8c451a" />
-        <ComponentRef Id="_locales_pl.pak_a5e40880_c240_45f8_a9bf_1d671356c573" />
-        <ComponentRef Id="_locales_pt_BR.pak_0c6af65b_62ac_4959_8ffa_77ae565cd57f" />
-        <ComponentRef Id="_locales_pt_PT.pak_58f5e921_65c6_47d7_879e_a17aad2c02bd" />
-        <ComponentRef Id="_locales_ro.pak_cac04733_1ee1_4e66_9e66_67eb42cede63" />
-        <ComponentRef Id="_locales_ru.pak_320e8b6a_f15d_41f6_91f9_38e57f69eef3" />
-        <ComponentRef Id="_locales_sk.pak_a8002b32_9d32_475f_9f2f_9f0d37df8025" />
-        <ComponentRef Id="_locales_sl.pak_78a26853_08d6_428c_898b_09e19ba4798e" />
-        <ComponentRef Id="_locales_sr.pak_3944c6d9_7970_482f_a3a8_dd3c88b24bf4" />
-        <ComponentRef Id="_locales_sv.pak_5a7ddf34_1393_437e_8369_b1f097a30652" />
-        <ComponentRef Id="_locales_sw.pak_0cae7d9f_e066_493a_add1_078f7b38cedd" />
-        <ComponentRef Id="_locales_ta.pak_d5b7b7fb_6487_4240_9368_c0fc8f30a948" />
-        <ComponentRef Id="_locales_te.pak_8d102b29_f30f_4036_9a0a_318436b2b423" />
-        <ComponentRef Id="_locales_th.pak_a97f3e5a_05b9_4060_8cf0_15cfaabf28da" />
-        <ComponentRef Id="_locales_tr.pak_70565b52_ae07_4482_ac33_7fc60b288f96" />
-        <ComponentRef Id="_locales_uk.pak_11304e9b_6baf_42cc_a772_990bd5661c4d" />
-        <ComponentRef Id="_locales_vi.pak_7e369247_0b71_4c40_a0fd_12f8687c6cc0" />
-        <ComponentRef Id="_locales_zh_CN.pak_6e02c22b_adcb_4ef8_b4df_d3f76b76488a" />
-        <ComponentRef Id="_locales_zh_TW.pak_322768a9_6f96_4241_ac8b_826b3b861faf" />
-        <ComponentRef Id="_air.png_d0fa22c6_ae3f_4d78_a7ed_992067c3b80f" />
-        <ComponentRef Id="_dirt.png_7affdb4f_d6ad_40b0_9afc_5bacbbb366bf" />
-        <ComponentRef Id="_grass.png_18bdcbc1_74b0_4823_8d4c_e5ca36d99d20" />
-        <ComponentRef Id="_leaves.png_58b2debe_c5f9_4450_968f_05dab3089d5d" />
-        <ComponentRef Id="_wood.png_5e9f85fe_b093_498c_b48a_f71bde5464dd" />
-        <ComponentRef Id="_default.png_346f7498_11a7_47b1_a808_22c0e488bb32" />
-        <ComponentRef Id="_default_rotated.png_8e247c24_7c62_41b3_b138_552214f690e0" />
-        <ComponentRef Id="_default.png_662ffbc4_5139_4d06_a2df_71a8ba791b8e" />
-        <ComponentRef Id="_flying_down_rotated.png_4239e841_5b6a_40ce_9453_f8b387600700" />
-        <ComponentRef Id="_flying_down.png_5718be16_7b8e_4f92_8a4a_ff96d6c6d04c" />
-        <ComponentRef Id="_flying_rotated.png_168e6e6b_c900_440d_9709_53922da5abe3" />
-        <ComponentRef Id="_flying.png_cbb019f3_b81f_42dc_bfaf_b55dfaa625a1" />
-        <ComponentRef Id="_default.png_4e262ab3_a2a6_4337_887b_1b9d81c5c0bf" />
-        <ComponentRef Id="_resources_app_assets_cursor.png_14dafe9a_40a5_4db7_aafb_b365b9c1aef7" />
-        <ComponentRef Id="_msi_background.jpg_237e1c02_52d4_4367_adbb_6d35af4ac4fb" />
-        <ComponentRef Id="_resources_app_lib_ActionResult.js_d119f164_9d8e_417a_b672_97f1210ebcd4" />
-        <ComponentRef Id="_resources_app_lib_Block.js_cadbc92e_ed73_4850_9d3a_d084fe78d129" />
-        <ComponentRef Id="_resources_app_lib_BlockType.js_c793a292_c176_46e2_aef1_0dd9bc9c62f8" />
-        <ComponentRef Id="_resources_app_lib_Blocks.js_b22afa68_292a_4c2d_a695_68d4a5e5251d" />
-        <ComponentRef Id="_resources_app_lib_Entities.js_9b5d174d_3f43_4ad6_a802_a12fd6f74efe" />
-        <ComponentRef Id="_resources_app_lib_Entity.js_86ff0378_b15d_4ad2_a083_76da387122a6" />
-        <ComponentRef Id="_resources_app_lib_EntityType.js_7eced9f2_8c61_4c53_a0e6_e478b46a15d9" />
-        <ComponentRef Id="_resources_app_lib_Player.js_9bf29cb9_3896_4f66_83a4_31d3d6bc7120" />
-        <ComponentRef Id="_resources_app_lib_Renderer.js_cefb90c5_4503_4b53_b468_849e2a012a03" />
-        <ComponentRef Id="_resources_app_lib_Resource.js_63f0e395_a466_457a_8be3_4964a0f675ce" />
-        <ComponentRef Id="_resources_app_lib_SimplexNoise.js_99e1c123_d609_447f_9019_4b84a31e7555" />
-        <ComponentRef Id="_TerrainGenerator.js_67d5d024_c2be_4c4b_bdb2_22151a84fdf9" />
-        <ComponentRef Id="_resources_app_lib_World.js_fd59e18f_fb1a_4131_98d9_fa595e5ebb24" />
-        <ComponentRef Id="_Parakeet_Simulator.msi_78185d94_f671_41d0_aa22_be14b9026bfd" />
-        <ComponentRef Id="_Parakeet_Simulator.wixobj_de8a9373_faca_4680_b887_3aff9d65fc68" />
-        <ComponentRef Id="_Parakeet_Simulator.wixpdb_b7a085b6_f279_45a0_897a_05a27dea2753" />
-        <ComponentRef Id="_Parakeet_Simulator.wxs_4242ed26_f68e_494a_ac0d_bb933a2e75e5" />
-        <ComponentRef Id="_.package_lock.json_59160506_de8f_4368_9086_30f451a0eed3" />
-        <ComponentRef Id="_.yarn_integrity_0ed7a844_b8d2_4d06_bd14_2d26dddbe34b" />
-        <ComponentRef Id="_resources_app_README.md_4bd978d1_7b54_4d06_9686_e42da19e1901" />
-        <ComponentRef Id="_resources_app_app.js_efe4864f_1653_4d44_b30d_cce788030fc2" />
-        <ComponentRef Id="_resources_app_build_msi.js_e9f3fd92_6d68_4464_ba97_01261bf11772" />
-        <ComponentRef Id="_resources_app_font.ttf_5cc99e06_aa2b_455e_88f2_31eb9ac76844" />
-        <ComponentRef Id="_resources_app_icon.ico_bd380693_caa2_4e96_8f59_e20af0960996" />
-        <ComponentRef Id="_resources_app_index.html_6f4b7cec_9d5c_4070_be19_6d7c97e7ec7c" />
-        <ComponentRef Id="_resources_app_main.js_b0de5a60_fdc3_4c74_842f_2f19e80cc543" />
-        <ComponentRef Id="_resources_app_package.json_2c05911c_3e47_485f_8de0_5eda82600ab5" />
-        <ComponentRef Id="_resources_app_style.css_72292887_8778_49f0_b4fb_eaeea3cdd152" />
-        <ComponentRef Id="_swiftshader_libEGL.dll_1162f203_bd2b_4742_bd8e_0ef5bb6f7dae" />
-        <ComponentRef Id="_swiftshader_libGLESv2.dll_77981ae8_b368_4479_9f47_384b0b5ae367" />
-        <ComponentRef Id="_LICENSE_051224b2_54dd_47e9_a7b5_a0507309cc8f" />
-        <ComponentRef Id="_LICENSES.chromium.html_8b016b1b_05ec_48b2_afb8_11d0879587a3" />
-        <ComponentRef Id="_Parakeet_Simulator.exe_496e3e34_b3f9_468c_959e_7c6fd03ce257" />
-        <ComponentRef Id="_chrome_100_percent.pak_c8e03bf7_2ede_4888_adf0_61334de0aeff" />
-        <ComponentRef Id="_chrome_200_percent.pak_ca9dedbb_5154_4e30_b817_958d37773c7c" />
-        <ComponentRef Id="_d3dcompiler_47.dll_af2001ae_b8d1_498b_901f_7d7722dac984" />
-        <ComponentRef Id="_ffmpeg.dll_856b64eb_dba1_48eb_936b_15f36dd431d2" />
-        <ComponentRef Id="_icudtl.dat_ea873425_0f55_4fd1_aaab_30e51c7c1ef5" />
-        <ComponentRef Id="_libEGL.dll_055d0040_092f_4756_b0a7_298e2b5960bd" />
-        <ComponentRef Id="_libGLESv2.dll_c52c6e1a_1eba_4cf1_a503_251c8d494fc4" />
-        <ComponentRef Id="_resources.pak_9c967772_34e8_4b19_a7d4_21d0164d2163" />
-        <ComponentRef Id="_snapshot_blob.bin_5fde4742_ec49_4a70_ac77_caf2f8ac3641" />
-        <ComponentRef Id="_v8_context_snapshot.bin_79060350_5d6b_454e_ac44_fb563bfc8aac" />
-        <ComponentRef Id="_version_3aaa4b8f_48f8_450d_898d_2cbe07c77b95" />
-        <ComponentRef Id="_vk_swiftshader.dll_77a5d0ab_bc7c_406f_b50b_0915234105f2" />
-        <ComponentRef Id="_vk_swiftshader_icd.json_ca433548_9085_4e57_84be_11364ed44a6b" />
-        <ComponentRef Id="_vulkan_1.dll_786c0e91_b763_469c_b34a_6ba0a3647f12" />
-        <ComponentRef Id="_Parakeet_Simulator.exe_0c67f8df_ff13_4b36_8fec_8002f75827ef" />
-        <ComponentRef Id="_.installInfo.json_588141a3_8fff_4434_972c_3b969ae9addf" />
+        <ComponentRef Id="_locales_am.pak_ce994bce_8afa_4968_afe9_c830289089cb" />
+        <ComponentRef Id="_locales_ar.pak_120b1ea3_6a90_4fde_88d1_8fc95bd5e983" />
+        <ComponentRef Id="_locales_bg.pak_c07c4b8c_c572_4f77_9664_e9c6cc7a7e8a" />
+        <ComponentRef Id="_locales_bn.pak_2e694c07_ccbe_46d5_bd19_ce8220d8854a" />
+        <ComponentRef Id="_locales_ca.pak_ab2253ca_0bf1_49f0_9092_e137be3edf9e" />
+        <ComponentRef Id="_locales_cs.pak_f658b1bb_f9ec_4961_a0a6_b84177cbcb6c" />
+        <ComponentRef Id="_locales_da.pak_3ddc17e4_ed9e_41ba_b1d2_db0630429319" />
+        <ComponentRef Id="_locales_de.pak_bcf1430b_b2b6_4527_bc4a_8c0157c1610e" />
+        <ComponentRef Id="_locales_el.pak_3814cc14_80cc_4680_89f8_8eb714bae954" />
+        <ComponentRef Id="_locales_en_GB.pak_e5e4093e_5fa8_4837_9765_919b04fd324c" />
+        <ComponentRef Id="_locales_en_US.pak_76920d5a_3b0c_4f62_99a0_949584bfbb96" />
+        <ComponentRef Id="_locales_es_419.pak_169487a7_9156_4e27_abf5_ab26f16e77c7" />
+        <ComponentRef Id="_locales_es.pak_0baab20a_3a98_42ad_ae38_9a1d917a3d85" />
+        <ComponentRef Id="_locales_et.pak_dab9b9c9_86fc_4cdd_90d8_3d6935c720d3" />
+        <ComponentRef Id="_locales_fa.pak_bbb5516f_3581_469f_adf3_3e9df2b39ee3" />
+        <ComponentRef Id="_locales_fi.pak_6e1bc35a_7fec_4fb8_9b3f_786dfe1c3ae7" />
+        <ComponentRef Id="_locales_fil.pak_44b7d975_8971_4d7b_b1a2_6533631c1e43" />
+        <ComponentRef Id="_locales_fr.pak_b3a81eaa_a44e_4b22_9cc7_a43c1a386292" />
+        <ComponentRef Id="_locales_gu.pak_e25a4487_7be7_4957_888d_8007c58d2dda" />
+        <ComponentRef Id="_locales_he.pak_e765570a_d1d0_4359_b01a_63cac483411b" />
+        <ComponentRef Id="_locales_hi.pak_2651297d_b3c1_4275_b7ac_7f10cfa8a512" />
+        <ComponentRef Id="_locales_hr.pak_a5016de5_c04d_4a26_8b27_64e04c3cadaa" />
+        <ComponentRef Id="_locales_hu.pak_54c4fcdd_d877_4ae3_b45a_83490bedc989" />
+        <ComponentRef Id="_locales_id.pak_6c4f9de5_7f16_4cae_afa9_4407b018ca94" />
+        <ComponentRef Id="_locales_it.pak_768c3b18_e97c_4918_bc6a_c62739d708c8" />
+        <ComponentRef Id="_locales_ja.pak_996cd73e_ec22_4e33_99dc_5b04fd2b34d2" />
+        <ComponentRef Id="_locales_kn.pak_06b40839_c034_4417_a88c_4bf5e2606197" />
+        <ComponentRef Id="_locales_ko.pak_cf14afe9_bbba_4874_a465_5435c5c69ad3" />
+        <ComponentRef Id="_locales_lt.pak_9dd0b493_84bc_4777_9bd6_c5e1a6603483" />
+        <ComponentRef Id="_locales_lv.pak_085d3eb1_df3f_4e07_aa5f_96a560866b6a" />
+        <ComponentRef Id="_locales_ml.pak_867c48c9_07c8_4e77_8f2b_0c90b58c7928" />
+        <ComponentRef Id="_locales_mr.pak_946de111_790c_4613_a40a_1f55e85f939a" />
+        <ComponentRef Id="_locales_ms.pak_cf4df2bd_8c75_49d1_82d4_1f119346d755" />
+        <ComponentRef Id="_locales_nb.pak_f173bc5d_8ed1_4474_a4d0_165359fea679" />
+        <ComponentRef Id="_locales_nl.pak_64818eb5_05fc_44ba_827c_4f4592290209" />
+        <ComponentRef Id="_locales_pl.pak_78bce1c9_8778_4da8_96ef_95b25a2042bf" />
+        <ComponentRef Id="_locales_pt_BR.pak_2022f95d_fba3_4a09_8f00_1f481e6e924e" />
+        <ComponentRef Id="_locales_pt_PT.pak_3d6fd553_b005_4e1f_b4e4_5ca433d59113" />
+        <ComponentRef Id="_locales_ro.pak_07777d0e_ead0_4d54_ba4e_1d96f5b3c6d6" />
+        <ComponentRef Id="_locales_ru.pak_91c29fe5_d904_4be6_9401_2467b9f67149" />
+        <ComponentRef Id="_locales_sk.pak_dd729ed2_78a1_42dc_b45d_7bae6a34eb3d" />
+        <ComponentRef Id="_locales_sl.pak_68c30235_0aad_44a4_bde2_9d0c36e2bd0f" />
+        <ComponentRef Id="_locales_sr.pak_81df1bbd_a3bb_462b_8ac4_b7f8739afc8b" />
+        <ComponentRef Id="_locales_sv.pak_37af994f_ea32_4f1c_9978_1d890a81f0ed" />
+        <ComponentRef Id="_locales_sw.pak_28dea709_dd57_4449_8045_dfa155fa16c6" />
+        <ComponentRef Id="_locales_ta.pak_2f9ca999_8a43_4db6_9262_f497feabb1b2" />
+        <ComponentRef Id="_locales_te.pak_78c9d952_7462_43a6_b842_358cfcc06006" />
+        <ComponentRef Id="_locales_th.pak_86770c6a_567b_42fa_865a_b18b661b283a" />
+        <ComponentRef Id="_locales_tr.pak_729716a6_6ee9_45d0_933b_5efc392b4a2b" />
+        <ComponentRef Id="_locales_uk.pak_566610b8_4f4c_4be7_9495_b69ca9303b5b" />
+        <ComponentRef Id="_locales_vi.pak_a1ff6cf0_c4dd_4fbd_8f2e_b42f2fa92b15" />
+        <ComponentRef Id="_locales_zh_CN.pak_926ca8d4_b1c1_4678_902b_10ea81751dc4" />
+        <ComponentRef Id="_locales_zh_TW.pak_d2748703_d5ef_45bc_b57c_1b71fb4d836d" />
+        <ComponentRef Id="_air.png_a8a8c091_ed16_493b_b3a5_018cb4e9c339" />
+        <ComponentRef Id="_dirt.png_3fbd35fc_2640_4de9_8957_097b6703063d" />
+        <ComponentRef Id="_grass.png_8a8f080e_0a59_4c69_b43e_72fa3ca71e55" />
+        <ComponentRef Id="_leaves.png_47bb1b59_1d83_42a3_a6cc_251d55e62804" />
+        <ComponentRef Id="_wood.png_c4b8e0fc_668d_4696_93f5_a8af2678e1b6" />
+        <ComponentRef Id="_default.png_1dd976d8_9715_49ef_824c_953c350ba5eb" />
+        <ComponentRef Id="_default_rotated.png_958d4cce_27d9_4be4_98dc_c0c1e9bf6865" />
+        <ComponentRef Id="_default.png_a0cf2b69_1e30_4819_87da_6a5a229776e6" />
+        <ComponentRef Id="_flying_down_rotated.png_8ef460c2_a0dc_4dcc_a4aa_c97172afdc49" />
+        <ComponentRef Id="_flying_down.png_5d0b1856_e4e2_44b9_ba17_29c81650c571" />
+        <ComponentRef Id="_flying_rotated.png_adbaeb5a_f2f9_4445_8790_2dd0f1426322" />
+        <ComponentRef Id="_flying.png_9733e1f3_9f8d_407b_9637_10b2a72a858f" />
+        <ComponentRef Id="_default.png_51b33e01_c5fb_4f4e_bac2_355c83ec1324" />
+        <ComponentRef Id="_resources_app_assets_cursor.png_a15865ea_0e8e_4cb8_88b8_d3043a7e5593" />
+        <ComponentRef Id="_msi_background.jpg_5ae52213_f7fd_433a_b147_fcf237204d52" />
+        <ComponentRef Id="_resources_app_lib_ActionResult.js_fc8a0821_cc04_40ef_b1b2_23ad33a89d1c" />
+        <ComponentRef Id="_resources_app_lib_Block.js_4a534eee_c3ee_49f1_8e94_189cb15a1c69" />
+        <ComponentRef Id="_resources_app_lib_BlockType.js_c0700d1a_052e_475d_b9c9_49e3a76c417f" />
+        <ComponentRef Id="_resources_app_lib_Blocks.js_bc38d107_c04b_49a8_a8e5_fcb3845c949d" />
+        <ComponentRef Id="_resources_app_lib_Entities.js_b6fac071_f8bd_4668_abed_8dcca9317c41" />
+        <ComponentRef Id="_resources_app_lib_Entity.js_877e8029_8407_4564_a28b_00582250425a" />
+        <ComponentRef Id="_resources_app_lib_EntityType.js_6bf034a6_2416_4dee_97fe_88199a70aaaa" />
+        <ComponentRef Id="_resources_app_lib_Player.js_b59f8d70_f842_4113_93b0_0d1b493e3332" />
+        <ComponentRef Id="_resources_app_lib_Renderer.js_529ab5eb_d540_4119_86ab_2385ebd909d8" />
+        <ComponentRef Id="_resources_app_lib_Resource.js_cb7039ba_9281_433b_8fc5_41207328faa5" />
+        <ComponentRef Id="_resources_app_lib_SimplexNoise.js_fc73bd4f_ab98_46c5_9c3c_c731424feb55" />
+        <ComponentRef Id="_TerrainGenerator.js_ec8f1661_6987_4560_a1ac_05238caa0f1f" />
+        <ComponentRef Id="_resources_app_lib_World.js_8b3664a3_eab6_4bf2_b657_56f0f7948dcf" />
+        <ComponentRef Id="_Parakeet_Simulator.msi_a2ca882e_8d92_4f03_9164_615c97f07892" />
+        <ComponentRef Id="_Parakeet_Simulator.wixobj_fbf759bc_ce0c_4df6_bb8b_20329281eb3f" />
+        <ComponentRef Id="_Parakeet_Simulator.wixpdb_4594247e_57c6_4383_aca9_6c469add3ee3" />
+        <ComponentRef Id="_Parakeet_Simulator.wxs_6642044a_10f1_44ab_8dd5_94bc19d425e0" />
+        <ComponentRef Id="_.package_lock.json_eae676d1_603e_47aa_8039_aba2cebfcc39" />
+        <ComponentRef Id="_.yarn_integrity_919cd3c3_3816_4a7c_b3a9_b89cc1c06a8e" />
+        <ComponentRef Id="_resources_app_.gitattributes_6e94e0c0_bc3b_47a5_a593_49241c38c889" />
+        <ComponentRef Id="_resources_app_README.md_74e373c8_dd18_4aac_afcb_a5a362533e1a" />
+        <ComponentRef Id="_resources_app_app.js_21460122_cf26_4b98_b6df_bc5060eb6e26" />
+        <ComponentRef Id="_resources_app_build_msi.js_4870364c_25e5_4d5e_8573_ec5294b9ea4a" />
+        <ComponentRef Id="_resources_app_font.ttf_e15e1de3_0ffe_4aa5_ba34_4cf230a6f549" />
+        <ComponentRef Id="_resources_app_icon.ico_927df9f3_5a49_402f_a2cd_63878b666841" />
+        <ComponentRef Id="_resources_app_index.html_269210ef_3ec2_4f54_8f56_b7a194f149a5" />
+        <ComponentRef Id="_resources_app_main.js_6c1a47a1_ef13_4764_9f62_611b1fbb3c15" />
+        <ComponentRef Id="_resources_app_msi.bat_2c0e2663_2c74_4c22_aa94_2355693ba9d2" />
+        <ComponentRef Id="_resources_app_package.json_d48a3cd4_7b72_4887_b9de_5039d519edd6" />
+        <ComponentRef Id="_resources_app_style.css_581453dc_b335_4313_b71b_63aa9f87785e" />
+        <ComponentRef Id="_swiftshader_libEGL.dll_e2631ce3_0942_45d2_8f46_00cfd97572f8" />
+        <ComponentRef Id="_swiftshader_libGLESv2.dll_82c94503_11d0_4b78_a317_5b217f861292" />
+        <ComponentRef Id="_LICENSE_706cbb4a_6ddf_4711_84af_ff91b556526d" />
+        <ComponentRef Id="_LICENSES.chromium.html_f15b55b6_4fed_4a88_a47e_74b3496d66ab" />
+        <ComponentRef Id="_Parakeet_Simulator.exe_703957e1_817c_4642_a3b3_e8708714c841" />
+        <ComponentRef Id="_chrome_100_percent.pak_5ea97486_24cf_4bdb_8693_c6a540943676" />
+        <ComponentRef Id="_chrome_200_percent.pak_463f7e5f_1075_4a6a_ab80_bd9a6242fcef" />
+        <ComponentRef Id="_d3dcompiler_47.dll_6b9c979d_7d1a_4aa2_9eda_60286f790dc3" />
+        <ComponentRef Id="_ffmpeg.dll_787ced0c_a9fb_4af0_b518_46152cddae37" />
+        <ComponentRef Id="_icudtl.dat_ec5df12f_2eb1_49e7_8dcf_0ec7da3d95ec" />
+        <ComponentRef Id="_libEGL.dll_28b4f80b_6806_4ee6_b6f5_d3667e0d6e95" />
+        <ComponentRef Id="_libGLESv2.dll_96544f8d_bd3b_431c_b316_424197b9f4c2" />
+        <ComponentRef Id="_resources.pak_22881765_e054_4491_8eb7_d247995dbfc7" />
+        <ComponentRef Id="_snapshot_blob.bin_26165bf1_e894_415a_b0de_b0eae03593fb" />
+        <ComponentRef Id="_v8_context_snapshot.bin_2ce243f7_85af_4e0e_b817_24505cfc2eea" />
+        <ComponentRef Id="_version_26e1ea20_803d_4fd1_91a5_5509b4ede148" />
+        <ComponentRef Id="_vk_swiftshader.dll_8d327dce_2f6b_47b9_8f5b_52ab20899862" />
+        <ComponentRef Id="_vk_swiftshader_icd.json_abf06073_b939_4ceb_a807_bbb8cd164c75" />
+        <ComponentRef Id="_vulkan_1.dll_728bca8a_674c_4e8b_9c5d_9778e7fd3117" />
+        <ComponentRef Id="_Parakeet_Simulator.exe_4da448ca_b357_43bd_97b5_7820237d4221" />
+        <ComponentRef Id="_.installInfo.json_5925aa14_03b6_4155_8603_64c14c71d47c" />
         <ComponentRef Id="RegistryInstallPath" />
         <ComponentRef Id="UninstallDisplayName" />
         <ComponentRef Id="UninstallPublisher" />
