@@ -9,7 +9,7 @@ Version: `1.0.0`
 Platform|Link
 --|--
 Browser|[Web page](https://entityplantt.github.io/parakeet-simulator/)
-Windows|[MSI File](https://entityplantt.github.io/parakeet-simulator/msi/Parakeet%20Simulator.msi)
+Windows|[MSI File](https://github.com/EntityPlantt/parakeet-simulator/raw/main/msi/Parakeet%20Simulator.msi)
 
 ## Description
 This HTML/CSS/JS game *(means it can be played in the browser)* is about a parakeet.
