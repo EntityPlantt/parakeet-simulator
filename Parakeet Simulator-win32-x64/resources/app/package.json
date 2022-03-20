@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "electron .",
-    "build": "npx electron-packager . --icon=icon.ico \"Parakeet Simulator\"\n./msi",
+    "build": "npx electron-packager . --icon=icon.ico \"Parakeet Simulator\"",
     "msi": "node build-msi.js"
   },
   "repository": {
